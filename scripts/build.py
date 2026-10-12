@@ -6,9 +6,10 @@ Channel   a TV channel from iptv-org/database (id, country, categories, website)
 Feed      a variant of a channel (SD/HD/regional) carrying its languages.
 Stream    a URL from one of the sources (iptv-org/iptv, other curated lists in
           sources.yml, or streams found by scripts/discover.py), pointing at one channel feed.
-Policy    decides whether a stream may be listed. Only streams served by the
-          channel's own website domain or by an allowlisted broadcast CDN /
-          official FAST platform pass; everything else is left out.
+Policy    decides whether a stream may be listed. Only streams served from one of
+          the channel's own domains (its website's, plus policy/official-domains.csv)
+          or from an allowlisted broadcast CDN / official FAST platform pass; links on a
+          redirect service (policy/redirectors.txt) are judged by where they land.
 Playlist  a named selection of listed streams (all, per country, per category,
           per language), written as M3U plus a JSON index for the website.
 
@@ -25,7 +26,7 @@ import json
 import re
 import urllib.request
 from collections import defaultdict
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit
@@ -83,10 +84,38 @@ def registrable_domain(url: str) -> str | None:
 
 
 class Policy:
-    def __init__(self, allowed_hosts: set[str], blocked_channels: set[str], takedowns: set[str]):
+    def __init__(
+        self,
+        allowed_hosts: set[str],
+        blocked_channels: set[str],
+        takedowns: set[str],
+        official_domains: dict[str, set[str]] | None = None,
+    ):
         self.allowed_hosts = allowed_hosts
         self.blocked_channels = blocked_channels
         self.takedowns = takedowns
+        self.official_domains = official_domains or {}  # channel id -> other domains its broadcaster owns
+
+    @classmethod
+    def load(cls, data: Path) -> Policy:
+        """The policy in policy/ plus the iptv-org blocklist from DATABASE_DATA_DIR."""
+        official: dict[str, set[str]] = defaultdict(set)
+        for r in read_csv(ROOT / "policy" / "official-domains.csv"):
+            official[r["channel"]].add(r["domain"])
+        return cls(
+            allowed_hosts=load_lines(ROOT / "policy" / "allowed-hosts.txt"),
+            blocked_channels={r["channel"] for r in read_csv(data / "blocklist.csv")},
+            takedowns={r["target"] for r in read_csv(ROOT / "policy" / "takedown.csv")},
+            official_domains=official,
+        )
+
+    def own_domains(self, channel: Channel) -> set[str]:
+        """Domains run by the channel's broadcaster: its website's domain plus policy/official-domains.csv."""
+        website = registrable_domain(channel.website) if channel.website else None
+        return self.official_domains.get(channel.id, set()) | ({website} if website else set())
+
+    def is_official(self, stream: Stream, channel: Channel) -> bool:
+        return registrable_domain(stream.url) in self.own_domains(channel)
 
     def admits(self, stream: Stream, channel: Channel | None) -> bool:
         if channel is None or channel.is_nsfw or channel.closed or "xxx" in channel.categories:
@@ -98,9 +127,7 @@ class Policy:
         domain = registrable_domain(stream.url)
         if domain is None:
             return False
-        if channel.website and registrable_domain(channel.website) == domain:
-            return True
-        return domain in self.allowed_hosts
+        return domain in self.own_domains(channel) or domain in self.allowed_hosts
 
 
 # ---------------------------------------------------------------- loading
@@ -268,6 +295,31 @@ def probe(stream: Stream, timeout: float = 10) -> bool:
         return False
 
 
+def resolve_redirects(streams: list[Stream], redirectors: set[str], workers: int = 64) -> list[Stream]:
+    """Replace each stream on a redirect service (policy/redirectors.txt) with the address it
+    lands on, so the policy judges, and the playlist lists, the real host. Streams that cannot be
+    resolved, or land on another redirector, are dropped."""
+    def resolve(s: Stream) -> Stream | None:
+        try:
+            final, _ = fetch(s.url, request_headers(s), 0, 10)
+        except Exception:
+            return None
+        return None if registrable_domain(final) in redirectors else replace(s, url=final)
+
+    via = [s for s in streams if registrable_domain(s.url) in redirectors]
+    if not via:
+        return streams
+    with concurrent.futures.ThreadPoolExecutor(workers) as pool:
+        resolved = dict(zip(map(id, via), pool.map(resolve, via)))
+    print(f"redirects: {sum(r is not None for r in resolved.values())}/{len(via)} resolved")
+    kept = []
+    for s in streams:
+        target = resolved.get(id(s), s)
+        if target is not None:
+            kept.append(target)
+    return kept
+
+
 def keep_playable(streams: list[Stream], workers: int = 64) -> list[Stream]:
     # Geo-blocked streams cannot be checked from a CI runner, so they are kept as listed.
     to_check = [s for s in streams if not s.geo_blocked]
@@ -307,12 +359,12 @@ def write_playlist(path: Path, entries: list[Entry]) -> None:
 def build(data: Path, streams_dir: Path, out: Path, check: bool, registry: Path | None = None) -> dict:
     channels, feeds, logos = load_channels(data), load_feeds(data), load_logos(data)
     language_names = {r["code"]: r["name"] for r in read_csv(data / "languages.csv")}
-    policy = Policy(
-        allowed_hosts=load_lines(ROOT / "policy" / "allowed-hosts.txt"),
-        blocked_channels={r["channel"] for r in read_csv(data / "blocklist.csv")},
-        takedowns={r["target"] for r in read_csv(ROOT / "policy" / "takedown.csv")},
-    )
+    policy = Policy.load(data)
     candidates = parse_streams(streams_dir) + (load_sources(registry) if registry else [])
+    # Only follow redirects for identified channels; the rest would be left out anyway.
+    candidates = resolve_redirects(
+        [s for s in candidates if s.channel_id in channels], load_lines(ROOT / "policy" / "redirectors.txt")
+    )
     listed = [s for s in candidates if policy.admits(s, channels.get(s.channel_id))]
     if check:
         listed = keep_playable(listed)

@@ -7,12 +7,12 @@ This directory is an index only: it stores, transcodes and relays no video and o
 1. **频道可识别** · The channel exists in [iptv-org/database](https://github.com/iptv-org/database) with a country and categories.
 2. **非成人、未停播** · The channel is not marked NSFW, is not in the `xxx` category and has not closed.
 3. **未被投诉** · The channel is not on the iptv-org blocklist (DMCA / NSFW) and is not on our own [takedown list](policy/takedown.csv).
-4. **来源可信** · The stream is served either from the channel's own website domain, or from a host in [`policy/allowed-hosts.txt`](policy/allowed-hosts.txt) (broadcast-grade CDNs, official free ad-supported platforms, public access TV). Bare IP addresses, redirectors and unknown relay hosts are always left out.
+4. **来源可信** · The stream is served either from one of the channel's own domains (its website's domain, plus other domains its broadcaster runs, listed with evidence in [`policy/official-domains.csv`](policy/official-domains.csv)), or from a host in [`policy/allowed-hosts.txt`](policy/allowed-hosts.txt) (broadcast-grade CDNs, official free ad-supported platforms, public access TV). Links on a redirect service in [`policy/redirectors.txt`](policy/redirectors.txt) are followed at build time; the address they land on is judged by this rule and is what gets listed. Bare IP addresses and unknown relay hosts are always left out.
 5. **可以播放** · Each daily build follows the stream to its first media segment (master playlist → variant → segment) and checks that the segment is real audio/video. Streams labelled geo-blocked are kept, because they can only be checked from their own country.
 
-**来源** · Sources: every stream above can come from iptv-org, another curated list in [`sources.yml`](sources.yml), or the weekly discovery job ([`scripts/discover.py`](scripts/discover.py)). Discovery adds a stream automatically only when it is served from the channel's own website domain; streams found on shared CDNs are listed in [`discovered/REPORT.md`](discovered/REPORT.md) and need a person to review the list and add it to `sources.yml`. All sources go through the same rules.
+**来源** · Sources: every stream above can come from iptv-org, another curated list in [`sources.yml`](sources.yml), or the weekly discovery job ([`scripts/discover.py`](scripts/discover.py)). Discovery adds a stream automatically only when it is served from one of the channel's own domains; streams found on shared CDNs are listed in [`discovered/REPORT.md`](discovered/REPORT.md) and need a person to review the list and add it to `sources.yml`. All sources go through the same rules.
 
-修改白名单需提交 Pull Request 并说明理由。Changes to the allowlist go through a pull request with a short justification.
+修改白名单、官方域名表或跳转服务列表需提交 Pull Request 并说明理由。Changes to the allowlist, the official-domains list or the redirector list go through a pull request with a short justification.
 
 ## 下架 · Takedown
 

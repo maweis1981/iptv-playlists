@@ -35,7 +35,7 @@ import yaml
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build import ROOT, Channel, Policy, load_channels, load_lines, parse_playlist, read_csv, registrable_domain
+from build import ROOT, Channel, Policy, load_channels, parse_playlist, read_csv
 
 QUERIES = [
     '"#EXTINF" "tvg-id" extension:m3u',
@@ -133,11 +133,7 @@ def main() -> None:
     token = os.environ.get("GITHUB_TOKEN", "")
 
     channels = load_channels(args.data)
-    policy = Policy(
-        allowed_hosts=load_lines(ROOT / "policy" / "allowed-hosts.txt"),
-        blocked_channels={r["channel"] for r in read_csv(args.data / "blocklist.csv")},
-        takedowns={r["target"] for r in read_csv(ROOT / "policy" / "takedown.csv")},
-    )
+    policy = Policy.load(args.data)
     known = {s.url for s in parse_playlist(args.listed.read_text(encoding="utf-8", errors="replace"), "listed")}
     known |= {s.url for s in parse_playlist(OFFICIAL.read_text(encoding="utf-8"), "discovered")}
 
@@ -164,7 +160,7 @@ def main() -> None:
             if s.url in known or not policy.admits(s, channel):
                 continue
             focused.update(focus.labels(channel))
-            if channel.website and registrable_domain(channel.website) == registrable_domain(s.url):
+            if policy.is_official(s, channel):
                 official += 1
                 added.append(s)
                 known.add(s.url)

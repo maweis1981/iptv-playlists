@@ -1,0 +1,4 @@
+# Redirect services. A stream on one of these hosts is followed at build time and
+# judged, and listed, by the address it lands on; it is left out if that address
+# fails the policy. One registrable domain per line; changes go through a pull request.
+jmp2.uk

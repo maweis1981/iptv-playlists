@@ -22,6 +22,14 @@ jwplive.com
 jwplayer.com
 jwplatform.com
 jwp.services
+# Akamai's legacy domain, same network as akamaized.net
+edgesuite.net
+
+# Korean broadcast CDNs
+# KT Corporation
+ktcdn.co.kr
+nowcdn.co.kr
+catenoid.net
 
 # Official FAST platforms
 amagi.tv
