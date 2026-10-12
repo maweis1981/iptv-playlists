@@ -166,3 +166,722 @@ https://news.cgtn.com/resource/live/english/cgtn-news.m3u8
 https://live.mnb.mn/live/mnb_world.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMInternacional.mz",TVM Internacional (480p) [Not 24/7]
 http://online.tvm.co.mz:1935/live/smil:Channel2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id@SD",CNBC Indonesia (720p)
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MatrixTVYogyakarta.id@HD",Matrix TV Yogyakarta (720p)
+https://stream.matrixtv.id/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="TVKU.id@SD",TVKU (720p)
+https://tvku.tv/hlsstream/hls/live.m3u8
+#EXTINF:-1 tvg-id="RTV.id",RTV (Channel Feed))
+https://rtvstream.rtv.co.id:4555/hls/rtv.m3u8
+#EXTINF:-1 tvg-id="DuniaLain.id@SD",Dunia Lain
+https://cdnjktcyber05.transvision.co.id/riutx01-26da9f0c09ef5b1a204f368aa2cb3e30/dash/RHVuaWEgTGFpbg/manifest.mpd?signature=ZDgxOGY4YTcxNzhiM2JiY2Y0OGViMDI0NmU3MDQyYmE=&time=77777777777&device_id=3qBPI-VMdGO_z7u0ST5cIt29gOWrt_ujQBduxIYWxaYbm3tSwA
+#EXTINF:-1 tvg-id="EatNGo.id@SD",Eat N Go
+https://cdnjktcyber05.transvision.co.id/riutx01-26da9f0c09ef5b1a204f368aa2cb3e30/dash/RWF0IE4gR28/manifest.mpd?signature=MGUyMTVjMDkxNTY5ZGU5ZjA0NzZjZDA3MWVmNmRlZmI=&time=77777777777&device_id=rAptU2xp55VCpP8p62yYRFkJ79Wu7YWKx-CcTtXSaew6RGTA4g
+#EXTINF:-1 tvg-id="DuniaAnak.id@SD",Dunia Anak
+https://cdnjktcyber05.transvision.co.id/riutx01-26da9f0c09ef5b1a204f368aa2cb3e30/dash/RHVuaWEgQW5haw/manifest.mpd?signature=YzFiMDczNTk5YzQ0YTAxM2U4ZDViODhmZWIzZDkwYzE=&time=77777777777&device_id=oqPcIJQPEgQxuPCsq77lFIwOcrQECY_B1ndbumvw1NNut3BBlg
+#EXTINF:-1 tvg-id="BioskopIndonesia.id@SD",Bioskop Indonesia
+https://cdnjktcyber05.transvision.co.id/riutx01-26da9f0c09ef5b1a204f368aa2cb3e30/dash/Qmlvc2tvcCBJbmRvbmVzaWE/manifest.mpd?signature=NGYzMTczZWZlM2RmZDk2YjBiNzgzZTY0MTViY2NmODk=&time=77777777777&device_id=AY6jRPCj-4G7-FyBTzdTQOtlgKJZUlBSKOwz6RX9v2OCe7nVog
+#EXTINF:-1 tvg-id="HLCNDTV.kr@SD",HLCN-DTV (1080p)
+https://media.kjmbc.co.kr/hls/live/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ApprovalTV.ng@HD",Approval TV (720p)
+https://live.approvaltv.com/approvaltv/index.m3u8
+#EXTINF:-1 tvg-id="30ALionelNation.us@SD",30A Lionel Nation
+https://30a-tv.com/ln.m3u8
+#EXTINF:-1 tvg-id="30ALoomeredTV.us@SD",30A Loomered TV
+https://30a-tv.com/loomer.m3u8
+#EXTINF:-1 tvg-id="30ASidewalks.us@SD",30A Sidewalks (720p)
+https://30a-tv.com/sidewalks.m3u8
+#EXTINF:-1 tvg-id="30ATelevisionChannel.us@SD",30A Television Channel (720p)
+https://30a-tv.com/feeds/masters/30atv.m3u8
+#EXTINF:-1 tvg-id="30ATheBeachShow.us@SD",30A The Beach Show (720p)
+https://30a-tv.com/beachy.m3u8
+#EXTINF:-1 tvg-id="30AWeLoveCars.us@SD",30A We Love Cars (720p)
+https://30a-tv.com/feeds/vidaa/cars.m3u8
+#EXTINF:-1 tvg-id="5minuttishiny.ru@SD",5 minut tishiny (1080p)
+https://cdn-dvr.ntv.ru/5_minut_tishiny/index.m3u8
+#EXTINF:-1 tvg-id="15PlusMusic.ru@HD",15+ Music (1080p)
+https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
+#EXTINF:-1 tvg-id="TVRI.id",TVRI world
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://klik.tvri.go.id/
+https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
+#EXTINF:-1 tvg-id="StingrayCMusic.ca",Movie Music By Stingray
+https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.m3u8
+#EXTINF:-1 tvg-id="PressTV.ir",Press TV
+https://live.presstv.ir/hls/presstv.m3u8
+#EXTINF:-1 tvg-id="SkyNewsArabia.ae",Sky News Arabia
+https://stream.skynewsarabia.com/hls/sna_720.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id",CNBC Indonesia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv/master.m3u8
+#EXTINF:-1 tvg-id="AlImanTV.id",Al-Iman TV
+https://tv.aliman.id/aliman/live.m3u8
+#EXTINF:-1 tvg-id="BiznetAdventure.id",Biznet Adventure (720p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BiznetKids.id",]t Kids (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/chunklist_w417362857_b2256000_slen_tkYml6a2V5bGl2ZXN0YXJ0dGltZT0wJmJpemtleWxpdmVlbmR0aW1lPTAmYml6a2V5bGl2ZUN1c3RvbVBhcmFtZXRlcj1teVBhcmFtZXRlciZiaXprZXlsaXZlaGFzaD1xQXJpMU0yeHVfTUFsbkh3VlJ0T3MyNGxSOFlfSFNEaWpOMkNSTmdoaWZVbGxoWXFRU0Rsa2QwcUU4Q2tad3hD.m3u8
+#EXTINF:-1 tvg-id="BiznetLifestyle.id",Biznet Lifestyle (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/chunklist_w109806785_b2256000_slen_tkYml6a2V5bGl2ZXN0YXJ0dGltZT0wJmJpemtleWxpdmVlbmR0aW1lPTAmYml6a2V5bGl2ZUN1c3RvbVBhcmFtZXRlcj1teVBhcmFtZXRlciZiaXprZXlsaXZlaGFzaD1qZ0RLUGNsY0dkWmZ2cklEeGZNZHBUN3Zfc3JNV0NidWJudEdvOWNDWVdwY0JCUWFsTWxMUXhIc3dtNDNQYlZS.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Aceh",TVRI DKI Jakata
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Aceh",TVRI Aceh
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Bali",TVRI Bali
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@BangkaBelitung",TVRI Bangka Belitung
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Bengkulu",TVRI Bengkulu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Gorontalo",TVRI Gorontalo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Jambi",TVRI Jambi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestJava",TVRI Jawa Barat
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar-avc1_500000=10007-mp4a_64000_eng=20003.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralJava",TVRI Jawa Tengah
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastJava",TVRI Jawa Timur
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestKalimantan",TVRI Kalimantan Barat
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthKalimantan",TVRI Kalimantan Selatan
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralKalimantan",TVRI Kalimantan Tengah
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastKalimantan",TVRI Kalimantan Timur
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Lampung",TVRI Lampung
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Maluku",TVRI Maluku
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@NorthSulawesi",TVRI North Sulawesi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestNusaTenggara",TVRI Nusa Tenggara Barat
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@EastNusaTenggara",TVRI Nusa Tenggara Timur
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Papua",TVRI Papua
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Riau",TVRI Riau
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Riau/hls/Riau-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestSulawesi",mlawesi Barat
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthSulawesi",TVRI Sulawesi Selatan
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@CentralSulawesi",TVRI Sulawesi Tengah
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SoutheastSulawesi",TVRI Sulawesi Tenggara
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SouthSumatra",TVRI Sumatera Selatan
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Sumsel/hls/Sumsel-avc1_500000=10001-mp4a_64000=20002.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@WestPapua",TVRI West Papua
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@Yogyakarta",TVRI Yogyakarta
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
+https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta-avc1_500000=10007-mp4a_64000=20001.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN INA
+https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/index.m3u8
+#EXTINF:-1 tvg-id="NickJrPlutoTV.us",Nick Jr Dora
+https://siloh.pluto.tv/lilo/production/Nick/03/master_1.m3u8
+#EXTINF:-1 tvg-id="EBS1TV.kr",EBS 1
+http://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBS2TV.kr",EBS 2
+http://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSKids.kr",EBS Kids
+http://ebsonair.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBSPlus2.kr",EBS Plus 2
+http://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="Naruto.us",TV Naruto (480p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5da0c85bd2c9c10009370984/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5da0c85bd2c9c10009370984&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=836&terminate=false&userId=
+#EXTINF:-1 tvg-id="OnePiece.us",Pluto TV One Piece (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f7790b3ed0c88000720b241/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="YuGiOh.us",Yu-Gi-Oh (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4ec10ed9636f00089b8c89/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVCars.us",Cars (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5812b3a4249444e05d09cc46/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5812b3a4249444e05d09cc46&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=663&terminate=false&userId=
+#EXTINF:-1 tvg-id="ClassicMoviesChannel.us",Classic Movies (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/561c5b0dada51f8004c4d855/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=561c5b0dada51f8004c4d855&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=106&terminate=false&userId=
+#EXTINF:-1 tvg-id="ClassicTVComedy.us",Classic TV Comedy (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f15e32b297f96000768f928/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f15e32b297f96000768f928&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=501&terminate=false&userId=
+#EXTINF:-1 tvg-id="ClassicTVDrama.us",Classic TV Drama (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f15e3cccf49290007053c67/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f15e3cccf49290007053c67&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=520&terminate=false&userId=
+#EXTINF:-1 tvg-id="DoctorWhoClassic.us",Doctor Who Classic (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ce4475cd43850831ca91ce7/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ce4475cd43850831ca91ce7&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=532&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVSeriesRetro.us",Series Retro (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5de802659167b10009e7deba/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
+#EXTINF:-1 tvg-id="TheLoveBoat.us",The Love Boat (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f7794a788d29000079d2f07/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="ComedyCentralPlutoTV.us",Comedy Central (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d4947590ba40f75dc29c26b/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=1&deviceId=5d4947590ba40f75dc29c26b&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false&sid=5ca4fefb-0728-11eb-a18c-0242ac110002&terminate=false&userId=
+#EXTINF:-1 tvg-id="FunnyAF.us",Funny AF (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/580e87ff497c73ba2f321dd3/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=580e87ff497c73ba2f321dd3&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=450&terminate=false&userId=
+#EXTINF:-1 tvg-id="RiffTrax.us",RiffTrax (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/58d947b9e420d8656ee101ab/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=58d947b9e420d8656ee101ab&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=489&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVSeriesComedia.us",Series Comedia (360p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f9853138d19af0007104a8d/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&is_lat=1&platform=web&rdid=channel&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="TVLandSitcoms.us",TV Land Sitcoms (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5c2d64ffbdf11b71587184b8/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5c2d64ffbdf11b71587184b8&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=455&terminate=false&userId=
+#EXTINF:-1 tvg-id="ForensicFiles.us",Forensic Files (360p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5bb1af6a268cae539bcedb0a/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5bb1af6a268cae539bcedb0a&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=370&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVHistory.us",HISTORY (240p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5a4d35dfa5c02e717a234f86/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5a4d35dfa5c02e717a234f86&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=651&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVParanormal.us",Paranormal (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5adf96e3e738977e2c31cb04/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5adf96e3e738977e2c31cb04&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=669&terminate=false&userId=
+#EXTINF:-1 tvg-id="SkillsPlusThrills.us",Skills + Thrills (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6000a6f4c3f8550008fc9b91/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="DogtheBountyHunter.us",Dog the Bounty Hunter (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5bee1a7359ee03633e780238/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5bee1a7359ee03633e780238&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=381&terminate=false&userId=
+#EXTINF:-1 tvg-id="GameShowCentral.us",Game Show Central (480p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e54187aae660e00093561d6/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e54187aae660e00093561d6&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=167&terminate=false&userId=
+#EXTINF:-1 tvg-id="LogoPlutoTV.us",Logo (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ce5a8954311f992edbe1da2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ce5a8954311f992edbe1da2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=187&terminate=false&userId=
+#EXTINF:-1 tvg-id="MinecrafTV.us",MinecrafTV (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5812b821249444e05d09cc4c/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5812b821249444e05d09cc4c&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=815&terminate=false&userId=
+#EXTINF:-1 tvg-id="AllRealitybyWEtv.us",Pluto All Reality by WE tv (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e82530945600e0007ca076c/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e82530945600e0007ca076c&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=310&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVReality.us",Reality (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d8bf0b06d2d855ee15115e3/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d8bf0b06d2d855ee15115e3&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=275&terminate=false&userId=
+#EXTINF:-1 tvg-id="StoriesbyAMC.us",Stories by AMC (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e8254118601b80007b4b7ae/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e8254118601b80007b4b7ae&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=135&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVBackcountry.us",Backcountry (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cabdf1437b88b26947346b2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5cabdf1437b88b26947346b2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=755&terminate=false&userId=
+#EXTINF:-1 tvg-id="SpikeOutdoors.us",Spike Outdoors (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5c393cad2de254456f7ef8c2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5c393cad2de254456f7ef8c2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=291&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVScience.us",Science (240p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/563a970aa1a1f7fe7c9daad7/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=563a970aa1a1f7fe7c9daad7&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=672&terminate=false&userId=
+#EXTINF:-1 tvg-id="SmithsonianChannelSelects.us",Smithsonian Channel Selects (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f21ea08007a49000762d349/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVAventura.us",Aventura (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ddc266f80e3550009136843/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
+#EXTINF:-1 tvg-id="BlackInkCrew.us",Black Ink Crew (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d51e2bceca5b4b2c0e06c50/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d51e2bceca5b4b2c0e06c50&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=285&terminate=false&userId=
+#EXTINF:-1 tvg-id="ColdCaseFiles.us",Cold Case Files (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5c37d6712de254456f7ec340/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5c37d6712de254456f7ec340&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=373&terminate=false&userId=
+#EXTINF:-1 tvg-id="Cops.us",Cops (240p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e1f7e089f23700009d66303/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e1f7e089f23700009d66303&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=367&terminate=false&userId=
+#EXTINF:-1 tvg-id="CSI.us",
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5efbd29e4aa26700076c0d06/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5efbd29e4aa26700076c0d06&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=355&terminate=false&userId=
+#EXTINF:-1 tvg-id="DarkShadows.us",Dark Shadows (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ef3958c66ac540007d6e6a7/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ef3958c66ac540007d6e6a7&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=535&terminate=false&userId=
+#EXTINF:-1 tvg-id="Degrassi.us",Degrassi (240p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5c6eeb85c05dfc257e5a50c4/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5c6eeb85c05dfc257e5a50c4&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=144&terminate=false&userId=
+#EXTINF:-1 tvg-id="FamilyTies.us",Family Ties (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f77939a630f530007dde654/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVFantastic.us",Fantastic (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b64a245a202b3337f09e51d/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5b64a245a202b3337f09e51d&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=66&terminate=false&userId=
+#EXTINF:-1 tvg-id="HappyDays.us",Happy Days (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f7794162a4559000781fc12/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="JudgeNosey.us",Judge nosey (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e9decb953e157000752321c/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e9decb953e157000752321c&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=160&terminate=false&userId=
+#EXTINF:-1 tvg-id="LittleBabyBum.us",Little Baby Bum (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5eb301b7395671000780d100/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5eb301b7395671000780d100&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=995&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVLives.us",Lives (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d8beeb39b5d5d5f8c672530/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d8beeb39b5d5d5f8c672530&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=276&terminate=false&userId=
+#EXTINF:-1 tvg-id="LoveHipHop.us",Love & Hip Hop (720p) [Not 24/7]
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d51ddf0369acdb278dfb05e/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d51ddf0369acdb278dfb05e&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=283&terminate=false&userId=
+#EXTINF:-1 tvg-id="MidsomerMurders.us",Midsomer Murders (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cbf6a868a1bce4a3d52a5e9/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5cbf6a868a1bce4a3d52a5e9&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=385&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVMilitary.us",Military (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5bb3fea0f711fd76340eebff/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5bb3fea0f711fd76340eebff&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=655&terminate=false&userId=
+#EXTINF:-1 tvg-id="MissionImpossible.us",Mission: Impossible (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f77977bd924d80007eee60c/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVNovelas.us",Novelas (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dcde0cc2efd2700090b7ff4/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
+#EXTINF:-1 tvg-id="PlutoTVSeriesLatinas.us",Series Latinas (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dd837642c6e9300098ad484/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
+#EXTINF:-1 tvg-id="StarTrek.us",Star Trek (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5efbd39f8c4ce900075d7698/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="Survivor.us",Survivor (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f21e7b24744c60007c1f6fc/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f21e7b24744c60007c1f6fc&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=296&terminate=false&userId=
+#EXTINF:-1 tvg-id="TheAddamsFamily.us",The Addams Family (240p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d81607ab737153ea3c1c80e/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d81607ab737153ea3c1c80e&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=511&terminate=false&userId=
+#EXTINF:-1 tvg-id="TheAmazingRace.us",The Amazing Race (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f21e8a6e2f12b000755afdb/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f21e8a6e2f12b000755afdb&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=297&terminate=false&userId=
+#EXTINF:-1 tvg-id="TheChallenge.us",The Challenge (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d48685da7e9f476aa8a1888/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d48685da7e9f476aa8a1888&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=298&terminate=false&userId=
+#EXTINF:-1 tvg-id="TheNewDetectives.us",The New Detectives (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5aea40b35126c2157123aa64/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5aea40b35126c2157123aa64&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=376&terminate=false&userId=
+#EXTINF:-1 tvg-id="TheRifleman.us",The Rifleman (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e825550e758c700077b0aef/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e825550e758c700077b0aef&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=529&terminate=false&userId=
+#EXTINF:-1 tvg-id="ThisOldHouse.us",This Old House (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d51e791b7dba3b2ae990ab2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d51e791b7dba3b2ae990ab2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=618&terminate=false&userId=
+#EXTINF:-1 tvg-id="ThreesCompany.us",Three's Company (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ef3977e5d773400077de284/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ef3977e5d773400077de284&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=508&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVThrillers.us",Thrillers (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b4e69e08291147bd04a9fd7/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5b4e69e08291147bd04a9fd7&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=74&terminate=false&userId=
+#EXTINF:-1 tvg-id="Tosh0.us",Tosh.0 (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dae084727c8af0009fe40a4/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5dae084727c8af0009fe40a4&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=470&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVTrueCrime.us",True Crime (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5812be1c249444e05d09cc50/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5812be1c249444e05d09cc50&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=365&terminate=false&userId=
+#EXTINF:-1 tvg-id="WildNOut.us",Wild 'N Out (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d48678d34ceb37d3c458a55/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d48678d34ceb37d3c458a55&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=480&terminate=false&userId=
+#EXTINF:-1 tvg-id="70sCinema.us",70s Cinema (684p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4d878d3d19b30007d2e782/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="90sThrowback.us",90s Throwback (684p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4d86f519358a00072b978e/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVAction.us",Action (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8ed1ff5c39700007e2204a/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=
+#EXTINF:-1 tvg-id="BlackCinema.us",Black Cinema (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/58af4c093a41ca9d4ecabe96/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=58af4c093a41ca9d4ecabe96&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=80&terminate=false&userId=
+#EXTINF:-1 tvg-id="CineTerror.us",Cine Terror (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d8d180092e97a5e107638d3/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d8d180092e97a5e107638d3&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=913&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVCrimeDrama.us",Crime Drama (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f31fd1b4c510e00071c3103/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f31fd1b4c510e00071c3103&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=350&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVCrimeMovies.us",Crime Movies (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4d8594eb979c0007706de7/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVCultFilms.us",Cult Films (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5c665db3e6c01b72c4977bc2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5c665db3e6c01b72c4977bc2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=109&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVDrama.us",Drama (360p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b4e92e4694c027be6ecece1/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5b4e92e4694c027be6ecece1&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=60&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVDramaLife.us",Drama Life (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f24662bebe0f0000767de32/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f24662bebe0f0000767de32&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=332&terminate=false&userId=
+#EXTINF:-1 tvg-id="FlicksofFury.us",Flicks of Fury (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/58e55b14ad8e9c364d55f717/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=58e55b14ad8e9c364d55f717&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=112&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVHorror.us",Horror (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/569546031a619b8f07ce6e25/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=569546031a619b8f07ce6e25&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=75&terminate=false&userId=
+#EXTINF:-1 tvg-id="ParamountMovieChannel.us",Paramount Movie Channel (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5cb0cae7a461406ffe3f5213&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=100&terminate=false&userId=
+#EXTINF:-1 tvg-id="80sRewind.us",Pluto 80s Rewind (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca525b650be2571e3943c63/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ca525b650be2571e3943c63&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=95&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVSciFi.us",Sci-Fi (360p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b4fc274694c027be6ed3eea/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5b4fc274694c027be6ed3eea&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=151&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVSpotlight.us",Spotlight (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ba3fb9c4b078e0f37ad34e8/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ba3fb9c4b078e0f37ad34e8&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=51&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVStaffPicks.us",Staff Picks (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4d863b98b41000076cd061/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVTerror.us",Terror (240p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5c6dc88fcd232425a6e0f06e/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5c6dc88fcd232425a6e0f06e&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=76&terminate=false&userId=
+#EXTINF:-1 tvg-id="TVLandDrama.us",TV Land Drama (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d40bebc5e3d2750a2239d7e/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d40bebc5e3d2750a2239d7e&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=130&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVWesterns.us",Westerns (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e8df4bc16e34700077e77d3/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e8df4bc16e34700077e77d3&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=526&terminate=false&userId=
+#EXTINF:-1 tvg-id="DoraTV.us",Dora TV (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d14fb6c84dd37df3b4290c5/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fb6c84dd37df3b4290c5&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=985&terminate=false&userId=
+#EXTINF:-1 tvg-id="NickPlutoTV.us",Nick (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca673e0d0bd6c2689c94ce3/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ca673e0d0bd6c2689c94ce3&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=977&terminate=false&userId=
+#EXTINF:-1 tvg-id="NickJrPlutoTV.us",Nick Jr. (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca6748a37b88b269472dad9/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ca6748a37b88b269472dad9&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=978&terminate=false&userId=
+#EXTINF:-1 tvg-id="TotallyTurtles.us",Totally Turtles (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d0c16d686454ead733d08f8/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d0c16d686454ead733d08f8&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=983&terminate=false&userId=
+#EXTINF:-1 tvg-id="BlazeLive.us",Blaze Live (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e46fba0c43b0d00096e5ac1/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e46fba0c43b0d00096e5ac1&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=238&terminate=false&userId=
+#EXTINF:-1 tvg-id="CMTEqualPlay.us",CMT Equal Play (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f68f53eb1e5800007390bf8/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="LiveMusicReplay.us",Live Music Replay US (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5873fc21cad696fb37aa9054/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5873fc21cad696fb37aa9054&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=855&terminate=false&userId=
+#EXTINF:-1 tvg-id="MTVPlutoTV.us",MTV (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca672f515a62078d2ec0ad2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ca672f515a62078d2ec0ad2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=178&terminate=false&userId=
+#EXTINF:-1 tvg-id="Vevo2K.us",VEVO 2K (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fd7bca3e0a4ee0007a38e8c/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="Vevo70s.us",VEVO 70's (1080p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f32f26bcd8aea00071240e5/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="Vevo90s.us",VEVO 90's (1080p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fd7bb1f86d94a000796e2c2/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="VevoCountry.us",VEVO Country (1080p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5da0d75e84830900098a1ea0/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="VevoRB.us",VEVO R&B (1080p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5da0d83f66c9700009b96d0e/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="BBCDrama.uk@France",BBC Drama France
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60d35a74c63c3c0008df6a90/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e0614c5-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=eff52b4b-c804-4f5a-968a-d48a2898e184
+#EXTINF:-1 tvg-id="Channel7.th",CH7 HD
+https://live-cdn-hwc.ch7.com/livech7hd/HD_1080p.m3u8
+#EXTINF:-1 tvg-id="FreshNews.kh",Fresh News (720p)
+http://streaming.freshnewsasia.com:1935/live/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="BacLieuTV.vn",Bac Lieu TV (1080p)
+https://tv.thbl.vn/live/tv/tv.m3u8
+#EXTINF:-1 tvg-id="CanThoTV.vn",Can Tho TV (1080p)
+https://live.canthotv.vn/live/tv_web/playlist.m3u8
+#EXTINF:-1 tvg-id="HungYenTV.vn",Hung Yen TV (1080p)
+https://cdn.hungyentv.vn/live/285f5449d7d7d2946e0bd2d54b7e60f25a4/playlist.m3u8
+#EXTINF:-1 tvg-id="KonTumTV.vn",Kon Tum TV (720p)
+https://tv.kontumtv.vn/live/kontumtv/kontumtv.m3u8
+#EXTINF:-1 tvg-id="LangSonTV.vn",Lang Son TV (1080p)
+https://stream.langsontv.vn/live/285c78da0c246524c90917842f8de03bd21/playlist.m3u8
+#EXTINF:-1 tvg-id="SonLaTV.vn",Son La TV (1080p)
+https://cdn.sonlatv.vn/live/28595222e707a364251b8724717894baa46/playlist.m3u8
+#EXTINF:-1 tvg-id="TienGiangTV.vn",Tien Giang (720p)
+http://thtg.vn:8001/thtg.m3u8
+#EXTINF:-1 tvg-id="ThuaThienHueTV.vn",Thua Thien Hue TV (404p)
+https://live.trt.com.vn/TRT-Online/playlist.m3u8
+#EXTINF:-1 tvg-id="TuyenQuangTV.vn",Tuyen Quang TV (540p)
+https://streaming.tuyenquangtv.vn/channel/tuyenquang/playlist.m3u8
+#EXTINF:-1 tvg-id="VinhPhucTV.vn",Vinh Phuc TV (1080p)
+http://vinhphuctv.vn:8090/vinhphuclive/web.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="YenBaiTV.vn",Yen Bai TV (1080p)
+https://live.yenbaitv.org.vn/hls/livestream.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id",CNBC Indonesia (720p)
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8
+#EXTINF:-1 tvg-id="HLDGDTV.kr",HLDG-DTV
+https://stream1.knn.co.kr/hls/9ly4534y7dm2xfa123r2_tv/index.m3u8
+#EXTINF:-1 tvg-id="HLAJDTV.kr",MBC Jeju (์ ์ฃผ MBC) (352p) [Not 24/7]
+https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
+#EXTINF:-1 tvg-id="NSHomeShopping.kr",NS Home Shopping (720p)
+https://livestream.nsmall.com/IPHONE/nsmallMobile.m3u8
+#EXTINF:-1 tvg-id="NSShopPlus.kr",NS Shop Plus (720p)
+https://shoppstream.nsmall.com/IPHONE/mobile.m3u8
+#EXTINF:-1 tvg-id="CGTNArabic.cn",CGTN Arabic (576p) [Not 24/7]
+https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8
+#EXTINF:-1 tvg-id="NUBARtv.iq",NUBAR TV (1080p)
+http://stream.nubar.tv:1935/private/NUBARtv/playlist.m3u8
+#EXTINF:-1 tvg-id="SohailTV.ca",Sohail TV (1080p)
+https://iptv.sohailtv.com/sohail/playlist/index.m3u8
+#EXTINF:-1 tvg-id="ParnianTV.ca",Parnian TV (720p)
+https://live2.parnian.tv/hls/.m3u8
+#EXTINF:-1 tvg-id="CGTNDocumentary.cn",CGTN Documentary (576p) [Not 24/7]
+https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8
+#EXTINF:-1 tvg-id="CGTNFrench.cn",CGTN Français (576p) [Not 24/7]
+https://news.cgtn.com/resource/live/french/cgtn-f.m3u8
+#EXTINF:-1 tvg-id="NBTWorld.th",NBT World (720p)
+https://cdn-edge-ott.prd.go.th/live_vlc/smil:2609-b4a6-64b3-1431-5e64/playlist.m3u8
+#EXTINF:-1 tvg-id="TVIAfrica.pt",TVI África (480p) [Not 24/7]
+https://video-auth4.iol.pt/live_tvi_africa/live_tvi_africa/edge_servers/tviafrica-480p/playlist.m3u8
+#EXTINF:-1 tvg-id="IBC24.in",IBC 24 (720p)
+https://livetv.ibc24.in/livestream.m3u8
+#EXTINF:-1 tvg-id="CGTNRussian.cn",CGTN Русский (576p)
+https://news.cgtn.com/resource/live/russian/cgtn-r.m3u8
+#EXTINF:-1 tvg-id="EnerGeekRadio.cl",EnerGeek Radio (936p)
+https://wifiexpert-1.energeek.cl/energeek/radio/playlist.m3u8
+#EXTINF:-1 tvg-id="ThairathTV.th",Thairath TV
+https://streaming-web.thairath.co.th/hls/playlist.m3u8
+#EXTINF:-1 tvg-id="IAmChannel.id",I AM CHANNEL (576p) [Not 24/7]
+http://iamchannel.org:1935/tes/1/playlist.m3u8
+#EXTINF:-1 tvg-id="RRINet.id",RRI Net (1080p)
+https://rrinet.rri.co.id/hls/live.m3u8
+#EXTINF:-1 tvg-id="CLTV36.ph",CLTV 36 (1080p) [Not 24/7]
+https://live.cltv36.tv:5443/LiveApp/streams/live.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id",CNBC Indonesia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Firefox/101.0 Safari/537.36 Edg/111.0.1661.43
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/index.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN Indonesia (ChannelFeed)
+https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist_w766556031_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id",CNBC Indonesia (ChannelFeed)
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist_w800170674_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="alphaCinema.ru@HD",alpha Cinema (1080p)
+https://live.15plusmg.ru/memfs/b389173a-df4e-4171-8904-e249893e71eb.m3u8
+#EXTINF:-1 tvg-id="alphaMoretime.ru@HD",alpha Moretime (1080p)
+https://live.15plusmg.ru/memfs/3546fc09-2eba-459d-9a1f-9a2fc39e50bd.m3u8
+#EXTINF:-1 tvg-id="TVRI.id@SD",TVRI Nasional
+https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional-avc1_2500000=10002-mp4a_96000_eng=20000.m3u8
+#EXTINF:-1 tvg-id="DuniaLain.id@SD",Dunia Lain (Transcorp)
+https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/RHVuaWEgTGFpbg/manifest.mpd
+#EXTINF:-1 tvg-id="nsert.id@SD",Insert (Transcorp)
+https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/IW5zZXJ0/manifest.mpd
+#EXTINF:-1 tvg-id="BioskopIndonesia.id@SD",BIOSKOP INDONESIA (Transcorp)
+https://cdnjktcyber05.transvision.co.id/riutx01-439abf566997b187117993103dfd8508/dash/Qmlvc2tvcCBJbmRvbmVzaWE/manifest.mpd
+#EXTINF:-1 tvg-id="TDMMacauSatellite.mo",Ou-Mun Macau Satellite Ch. 96 (720p)
+https://live3.tdm.com.mo/ch3/ch3.live/playlist.m3u8
+#EXTINF:-1 tvg-id="TDMEntertainment.mo",TDM Entertainment Ch. 95 (720p)
+https://live3.tdm.com.mo/ch6/hd_ch6.live/playlist.m3u8
+#EXTINF:-1 tvg-id="TDMInformation.mo",TDM Info. Macau (720p) [Not 24/7]
+https://live3.tdm.com.mo/ch5/info_ch5.live/playlist.m3u8
+#EXTINF:-1 tvg-id="TDMSports.mo",TDM Sports (720p)
+https://live3.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8
+#EXTINF:-1 tvg-id="DensFoodChannel.id@SD",Dens Food Channel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://op-flashcon-digdayahd-1.dens.tv/h/h248/index.m3u8
+#EXTINF:-1 tvg-id="DensLifeStyle.id@SD",Dens Life & Style
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://op-flashcon-digdayahd-1.dens.tv/h/h222/index.m3u8
+#EXTINF:-1 tvg-id="DensPlay.id@SD",Dens Play
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://op-flashcon-digdayahd-1.dens.tv/h/h225/index.m3u8
+#EXTINF:-1 tvg-id="DensShowBiz.id@SD",Dens ShowBiz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://op-flashcon-digdayahd-1.dens.tv/h/h203/index.m3u8
+#EXTINF:-1 tvg-id="DensKnowledge.id@SD",Dens Knowledge
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://op-flashcon-digdayahd-1.dens.tv/h/h236/index.m3u8
+#EXTINF:-1 tvg-id="DuniaAnak.id@SD",Dunia Anak
+https://cdnjktcyber05.transvision.co.id/riutx01-a823b93f0d45cabb0fba0e57ca612f86/dash/RHVuaWEgQW5haw/manifest.mpd?signature=YzFiMDczNTk5YzQ0YTAxM2U4ZDViODhmZWIzZDkwYzE=&time=77777777777&device_id=oqPcIJQPEgQxuPCsq77lFIwOcrQECY_B1ndbumvw1NNut3BBlg
+#EXTINF:-1 tvg-id="DuniaAnak.id",Dunia Anak
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://cdnjkt913.transvision.co.id:1000/live/master/2/4028c6856c3db2cc016cdc32eb0c439c/manifest.mpd
+#EXTINF:-1 tvg-id="QVC.jp",QVC
+https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id",CNBC Indonesia
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN Indonesia
+https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="DuniaLain.id",Dunia Lain 🔴
+https://cdnjkt913.transvision.co.id:1000/live/master/2/4028c6856ea34e35016ef8e9fdf951c1/manifest.mpd
+#EXTINF:-1 tvg-id="MusikIndonesia.id",Musik Indonesia 🔴
+https://cdnjkt913.transvision.co.id:1000/live/master/2/4028c685730a4243017317dee5df1572/manifest.mpd
+#EXTINF:-1 tvg-id="BioskopIndonesia.id",Bioskop Indonesia 🔴
+https://cdnjkt913.transvision.co.id:1000/live/master/4/4028c6856fd0d66d0170341bf1000905/manifest.mpd
+#EXTINF:-1 tvg-id="BiznetKids.id@SD",Biznet Kids (1080p)
+http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/index.m3u8
+#EXTINF:-1 tvg-id="BiznetLifestyle.id@SD",Biznet Lifestyle (1080p)
+http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/index.m3u8
+#EXTINF:-1 tvg-id="VistaarNews.in@SD",Vistaar News (576p)
+https://vistaarnews.com/livetv-stream/test.m3u8
+#EXTINF:-1 tvg-id="MetroTV.id",Metro TV
+http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MaturTV.ru",Матур ТВ
+https://public.streaming.matur-tv.ru/hls/h264_aac/stream.m3u8
+#EXTINF:-1 tvg-id="BiznetAdventure.id",Biznet Adventure
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/manifest.mpd
+#EXTINF:-1 tvg-id="BiznetKids.id",Biznet Kids
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/manifest.mpd
+#EXTINF:-1 tvg-id="MatrixTVYogyakarta.id@HD",Matrix TV Yogyakarta (720p)
+#EXTVLCOPT:http-referrer=https://stream.matrixtv.id/
+https://stream.matrixtv.id/hls/1/stream.m3u8
+#EXTINF:-1 tvg-id="AsthaTV.id@HD",Astha TV
+https://asthatv.com/live/stream.m3u8
+#EXTINF:-1 tvg-id="TVRI.id",TVRI Nasional
+https://ott-balancer.tvri.go.id/live/eds/TVRINasional/hls/TVRINasional.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN Indonesia
+https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist_w909769083_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="EfarinaTV.id@SD",Efarina TV (720p)
+https://live.efarinatv.net/hls/stream123/index.m3u8
+#EXTINF:-1 tvg-id="RBTVJogja.id@SD",RBTV Jogja (1080p) [Not 24/7]
+http://live.rbtvjogja.tv/481e185e-72e3-49f6-ad37-e495f911c9e4_output_0.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN Indonesia (720p) [Geo-blocked]
+https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NWEconomie.tg",NW Economie (576p)
+https://hls.newworldtv.com/nw-economie/video/live.m3u8
+#EXTINF:-1 tvg-id="RRINet.id",RRI Net
+https://public-streaming.rri.co.id/memfs/b3169f10-7846-496c-a186-698ea5ddd310.m3u8
+#EXTINF:-1 tvg-id="SercemTV.tr@HD",Sercem TV (1080p)
+https://canli.sercemtv.com.tr/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="PBS.us@KQED",KQED-DT2 (1080p)
+https://kqeddt2.lls.pbs.org/kqeddt2-hls.m3u8
+#EXTINF:-1 tvg-id="PBS.us@KVIE",KVIE-DT2 (1080p)
+https://kviedt2.lls.pbs.org/kviedt2-hls.m3u8
+#EXTINF:-1 tvg-id="TVUniversidad.ar@SD",TV Universidad
+https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8
+#EXTINF:-1 tvg-id="PBS.us@WEDQ",WEDQ-DT4 (1080p)
+https://wedqdt4.lls.pbs.org/wedqdt4-hls.m3u8
+#EXTINF:-1 tvg-id="IslamChannel.uk",Islam Channel (576p) [Not 24/7]
+https://live.islamchannel.tv/live11/islamtv_english/bitrate1.isml/live.m3u8
+#EXTINF:-1 tvg-id="Channel43.ru",43 канал (Туапсе) (720p)
+http://sochinskayatrk.ru/hdtv/hls/43Channel_hd/playlist.m3u8
+#EXTINF:-1 tvg-id="FreedomMovieSphere.ug",Freedom Movie Sphere (720p)
+https://panel.freedomflixtv.org:3311/stream/play.m3u8
+#EXTINF:-1 tvg-id="ParamountMovieChannel.us",Paramount Movie Channel (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?advertisingId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&appVersion=unknown&deviceDNT=0&deviceId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceUA=samsung/SM-T720/10&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&samsung_app_domain=https://play.google.com/store/apps/details?id=com.samsung.android.tvplus&samsung_app_name=Mobile+TV+Plus&us_privacy=1YNY
+#EXTINF:-1 tvg-id="ParamountPlusPicks.us",Paramount Plus Picks (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ff8c708653d080007361b14/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d14fc31252d35decbc4080b&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=873&terminate=false&userId=
+#EXTINF:-1 tvg-id="PersianFilm.ir",Persian Film (720p) [Not 24/7]
+https://pfilmhls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="80sRewind.us",Pluto TV 80s Rewind (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ca525b650be2571e3943c63/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="CineTerror.us",Pluto TV Cine Terror (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d8d180092e97a5e107638d3/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVCrimeDrama.us",Pluto TV Crime Drama (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f31fd1b4c510e00071c3103/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVDrama.us",Pluto TV Drama (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dc190f7bfed110009d934c3/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=1&deviceId=5dc190f7bfed110009d934c3&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false&sid=a1f190ec-0582-11eb-a59f-0242ac110002&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVMovies.de",Pluto TV Movies (Germany) (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5c5c3b948002db3c3e0b262e/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5c5c3b948002db3c3e0b262e&deviceLat=51.2993&deviceLon=9.4910&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false&sid=50&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVSciFi.us",Pluto TV Sci-Fi (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f2817d3d7573a00080f9175/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
+#EXTINF:-1 tvg-id="PlutoTVSpotlight.us",Pluto TV Spotlight (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ba3fb9c4b078e0f37ad34e8/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVTerror.us",Pluto TV Terror (720p) [Not 24/7]
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5c6dc88fcd232425a6e0f06e/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="RaiMovie.it",Rai Movie (576p) [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002
+#EXTINF:-1 tvg-id="SEOTV4Peliculas.bo",SEO TV 4 Películas (1080p)
+https://live.seo.tv.bo/live/SEO-4.m3u8
+#EXTINF:-1 tvg-id="STRK.ru",СТРК (720p) [Not 24/7]
+http://sochinskayatrk.ru/hdtv/hls/strc_hd/playlist.m3u8
+#EXTINF:-1 tvg-id="70sCinema.us",70s Cinema
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f4d878d3d19b30007d2e782/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c263252-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=7c57f1f3-2078-4f92-a4b5-6cd444220a70
+#EXTINF:-1 tvg-id="80sRewind.us",80s Rewind
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca525b650be2571e3943c63/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c263253-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=b52c759c-a26c-4e65-828b-14277d6117e0
+#EXTINF:-1 tvg-id="90sThrowback.us",90s Throwback
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f4d86f519358a00072b978e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c265961-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=71f86833-3dd6-41ac-a9b8-4a4ec8873306
+#EXTINF:-1 tvg-id="BlackCinema.us",Black Cinema
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/58af4c093a41ca9d4ecabe96/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c271cb5-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=93605d96-6c9d-457d-a2b4-d26d07474db9
+#EXTINF:-1 tvg-id="CinePremiere.us",Cine Premiere
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cf968040ab7d8f181e6a68b/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c27e000-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a7f04239-fee6-40d2-9e5e-6893a6d330ec
+#EXTINF:-1 tvg-id="ClassicMoviesChannel.us",Classic Movies Channel
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/561c5b0dada51f8004c4d855/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c27e003-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=7911819c-67eb-4f58-944f-5c6c6d4d937d
+#EXTINF:-1 tvg-id="FlicksofFury.us",Flicks of Fury
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/58e55b14ad8e9c364d55f717/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c28ca66-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=671a0e89-5b21-406b-95a9-b395c4ef4b07
+#EXTINF:-1 tvg-id="KidsMovieClub.us",Kids Movie Club
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5db0ad56edc89300090d2ebb/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2966a7-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=3a7777f6-4245-4af6-b0b4-ee772b6bbeac
+#EXTINF:-1 tvg-id="MoviesonVerizon.us",Movies on Verizon
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5efb60a9e426140007c78e4b/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a02e4-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=b6350812-05fd-4d36-ad04-51b5df6a9ed0
+#EXTINF:-1 tvg-id="ParamountMovieChannel.us",Paramount Movie Channel
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a7819-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=8a4a0712-cb24-4d05-b429-1b98c1f73f74
+#EXTINF:-1 tvg-id="ParamountPlusPicks.us",Paramount+ Picks
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ff8c708653d080007361b14/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a9f20-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=86df5336-6268-4928-9b7d-3af618ca807b
+#EXTINF:-1 tvg-id="PlutoTVAction.us",Pluto TV Action
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/561d7d484dc7c8770484914a/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2ac632-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=9bd2e9c0-393b-484b-b5bc-b1869a276513
+#EXTINF:-1 tvg-id="PlutoTVCrimeDrama.us",Pluto TV Crime Drama
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f31fd1b4c510e00071c3103/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2aed40-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=3ab21513-d563-430f-ace4-ec869e2676fb
+#EXTINF:-1 tvg-id="PlutoTVCrimeMovies.us",Pluto TV Crime Movies
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f4d8594eb979c0007706de7/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2aed41-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=e4d2554e-9b84-4086-8e1d-07f64310a23b
+#EXTINF:-1 tvg-id="PlutoTVCultFilms.us",Pluto TV Cult Films
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c665db3e6c01b72c4977bc2/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2aed42-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=6c2ff9f4-514d-4e8c-b1c7-b4c048053a69
+#EXTINF:-1 tvg-id="PlutoTVDrama.us",Pluto TV Drama
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5b4e92e4694c027be6ecece1/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2aed44-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=01b9b883-5344-4e99-81f9-dc1d9942ca58
+#EXTINF:-1 tvg-id="PlutoTVHorror.us",Pluto TV Horror
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/569546031a619b8f07ce6e25/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b1450-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=3f8b9bca-2807-48aa-a7cc-8513d68f8d92
+#EXTINF:-1 tvg-id="PlutoTVKultfilme.de",Pluto TV Kultfilme
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5dde47b63585b500099f74ec/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84aea088-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=3418c444-a5b9-456d-9d11-e4e9c7b5eec0
+#EXTINF:-1 tvg-id="PlutoTVMovies.de",Pluto TV Movies
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c5c3b948002db3c3e0b262e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84aec791-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=5500aa67-c527-4db6-868b-d37341c34286
+#EXTINF:-1 tvg-id="PlutoTVReaction.us",Pluto TV Reaction
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/617b37b361e0fd0008cfd8c5/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b1457-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=32aea123-3ab5-4713-944a-87ebeb334781
+#EXTINF:-1 tvg-id="PlutoTVRomance.de",Pluto TV Romance
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5dc287ce3086a20009f5024c/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84aec799-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=91cee60e-49f2-4985-953a-f2cde441fe54
+#EXTINF:-1 tvg-id="PlutoTVRomance.us",Pluto TV Romance
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a66795ef91fef2c7031c599/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b1459-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=195653a1-6a75-4cb6-b94d-0fe4a7594dba
+#EXTINF:-1 tvg-id="PlutoTVSciFi.de",Pluto TV Sci-Fi
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60ed498c4248a400077c0b9d/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84aeeea0-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=91571e99-b22e-454e-9622-6abd1ff79fd1
+#EXTINF:-1 tvg-id="PlutoTVSciFi.us",Pluto TV Sci-Fi
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5b4fc274694c027be6ed3eea/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b3b60-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=ed62db1c-5556-4fa7-b231-9514fcc69832
+#EXTINF:-1 tvg-id="PlutoTVSpotlight.us",Pluto TV Spotlight
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ba3fb9c4b078e0f37ad34e8/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b3b64-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a26dc013-1780-409c-9a56-09ae4538fe40
+#EXTINF:-1 tvg-id="PlutoTVStaffPicks.us",Pluto TV Staff Picks
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f4d863b98b41000076cd061/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b3b65-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c2fde2b7-d78e-4906-abf2-3c433f73ec5b
+#EXTINF:-1 tvg-id="PlutoTVTerror.us",Pluto TV Terror
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c6dc88fcd232425a6e0f06e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b3b67-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=bbd5d7ff-a6cc-4ad9-bb5f-d0f36c75fc29
+#EXTINF:-1 tvg-id="PlutoTVWesterns.us",Pluto TV Westerns
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5b4e94282d4ec87bdcbb87cd/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b6272-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=5e8336d8-e46b-4f0f-86ff-ba6f9678d77a
+#EXTINF:-1 tvg-id="SEOTV4Peliculas.bo",SEO TV 4 Películas (1080p)
+https://seo.tv.bo/tv/SEOTV4_HD.m3u8
+#EXTINF:-1 tvg-id="TVLandDrama.us",TV Land Drama
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d40bebc5e3d2750a2239d7e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2c9af3-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=5e762bb7-572b-4470-87fd-b3b4bb48462e
+#EXTINF:-1 tvg-id="Channel7.th",CH7 HD (1080p)
+https://live-cdn.ch7.com/out/v1/eafeb02c55b64a15b278b1e66c7fc776/playlist_9.m3u8
+#EXTINF:-1 tvg-id="MCOTHD.th@SD",MCOT HD
+https://mcothd-streaming-edge-cdn.mcot.net/tencentmcot/smil:tencentmcot.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CanThoTV.vn",Can Tho TV (1080p)
+https://live.canthotv.vn/live/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNArabic.cn",CGTN Arabic (1080p) [Not 24/7]
+https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNSpanish.cn",CGTN Espaรฑol (1080p)
+https://espanol-livews.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNFrench.cn",CGTN Franรงais (1080p) [Not 24/7]
+https://francais-livews.cgtn.com/hls/LSvev95OuFZtKLc6CeKEFYXj220802LSTeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNRussian.cn",CGTN ะ ัััะบะธะน (1080p)
+https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="NosTVBonaire.bq",Nos TV Bonaire (1080p)
+https://stream1.nostvbonaire.com/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="BanningCityTV.us",Banning CityTV (Banning CA) (1080p)
+https://vbfast-c.viebit.com/explive/1785562643_bd6616d7216264c07d4070f094fad46e1083feae/072e341f-100d-4da1-9c18-65370ebf35c6/playlist.m3u8
+#EXTINF:-1 tvg-id="MorangoscomAcucar.pt",Morangos com Açúcar (1080p)
+https://video-auth2.iol.pt/live_hd2/live_hd2/playlist.m3u8
+#EXTINF:-1 tvg-id="Cops.us",Pluto TV Cops (480p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e1f7e089f23700009d66303/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="DealorNoDeal.us",Pluto TV Deal or No Deal (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e9debf8c881310007d7bde1/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="Degrassi.us",Pluto TV Degrassi (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5c6eeb85c05dfc257e5a50c4/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="Dogs247.us",Pluto TV Dogs 24/7 (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b329e0a7b9d8872aeb49ceb/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5b329e0a7b9d8872aeb49ceb&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=636&terminate=false&userId=
+#EXTINF:-1 tvg-id="LivelyPlace.us",Pluto TV Lively Place (720p) [Not 24/7]
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dc1cb279c91420009db261d/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5dc1cb279c91420009db261d&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=615&terminate=false&userId=
+#EXTINF:-1 tvg-id="LoveHipHop.us",Pluto TV Love & Hip Hop (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d51ddf0369acdb278dfb05e/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVLoveStories.us",Pluto TV Love Stories (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f15e181520cfa000771ce79/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5f15e181520cfa000771ce79&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=147&terminate=false&userId=
+#EXTINF:-1 tvg-id="MoreStarTrek.us",Pluto TV More Star Trek (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/634dacf51d90320007fcd5fa/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="MTVBlockParty.us",Pluto TV MTV Block Party (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d3609cd6a6c78d7672f2a81/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="MTVDating.us",Pluto TV MTV Dating (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca6899a37b88b269472ea4b/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ca6899a37b88b269472ea4b&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=330&terminate=false&userId=
+#EXTINF:-1 tvg-id="Rescue911.us",Pluto TV Rescue 911 (720p) [Not 24/7]
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f21e831e9fe730007706acb/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="TheAddamsFamily.us",Pluto TV The Addams Family (720p) [Not 24/7]
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d81607ab737153ea3c1c80e/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="TinyHouseNation.us",Pluto TV Tiny House Nation (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/601a0342dcf4370007566891/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVWeddings.us",Pluto TV Weddings (720p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5877acecb16bb1e042ee453f/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5877acecb16bb1e042ee453f&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=632&terminate=false&userId=
+#EXTINF:-1 tvg-id="WildNOut.us",Pluto TV Wild 'N Out (720p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d48678d34ceb37d3c458a55/master.m3u8?advertisingId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&appVersion=unknown&deviceDNT=0&deviceId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceUA=samsung/SM-T720/10&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&samsung_app_domain=https://play.google.com/store/apps/details?id=com.samsung.android.tvplus&samsung_app_name=Mobile+TV+Plus&us_privacy=1YNY
+#EXTINF:-1 tvg-id="SEOTV3Novelas.bo",SEO TV 3 Novelas (1080p)
+https://live.seo.tv.bo/live/SEO-3.m3u8
+#EXTINF:-1 tvg-id="NTVSeries.ru",НТВ Сериал
+http://cdn.ntv.ru/th_serial/playlist.m3u8
+#EXTINF:-1 tvg-id="NTVHit.ru",НТВ Хит
+http://cdn.ntv.ru/th_style/playlist.m3u8
+#EXTINF:-1 tvg-id="BiznetAdventure.id",Biznet Adventure (720p)
+http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.m3u8?bizkeyliveCustomParameter=myParameter&bizkeyliveendtime=0&bizkeylivehash=iJYiwvsAhKLgYjtMcoxVp1GZg1XW_wNcrvg-lcNq6Vdy&bizkeylivestarttime=0
+#EXTINF:-1 tvg-id="BiznetKids.id",Biznet Kids (720p)
+http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/playlist.m3u8?bizkeyliveCustomParameter=myParameter&bizkeyliveendtime=0&bizkeylivehash=qAri1M2xu_MAlnHwVRtOs24lR8Y_HSDijN2CRNghifUllhYqQSDlkd0qE8CkZwxC&bizkeylivestarttime=0
+#EXTINF:-1 tvg-id="BiznetLifestyle.id",Biznet Lifestyle (720p)
+http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/playlist.m3u8?bizkeyliveCustomParameter=myParameter&bizkeyliveendtime=0&bizkeylivehash=jgDKPclcGdZfvrIDxfMdpT7v_srMWCbubntGo9cCYWpcBBQalMlLQxHswm43PbVR&bizkeylivestarttime=0
+#EXTINF:-1 tvg-id="HKSTV.hk",香港衛視 (576p) [Not 24/7]
+http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+#EXTINF:-1 tvg-id="PhoenixChineseChannel.hk",Phoenix Chinese Channel (鳳凰衛視中文) (1080p)
+https://playtv-live.ifeng.com/live/06OLEGEGM4G_tv1.m3u8
+#EXTINF:-1 tvg-id="PhoenixInfoNewsChannel.hk",Phoenix InfoNews Channel (鳳凰衛視資訊) (1080p)
+https://playtv-live.ifeng.com/live/06OLEEWQKN4_tv1.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN Indonesia
+https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist_w891045790_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="CNBCIndonesia.id",CNBC Indonesia
+https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist_w1843433135_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN Indonesia
+http://live.cnnindonesia.com/livecnn/smil:lite.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RBTVJogja.id@SD",RBTV Jogja (1080p)
+#EXTVLCOPT:http-referrer=http://live.rbtvjogja.tv/
+http://live.rbtvjogja.tv/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="EfarinaTV.id@SD",Efarina TV
+https://live.efarinatv.net/hls/stream.m3u8
+#EXTINF:-1 tvg-id="CCPSEducationChannel.us",Collier County Public Schools CCPS Education Channel (Naples FL) (480p)
+https://watch.collierschools.com/EducationChannel/educhannel.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="LeominsterTVEducational.us",Leominster TV Educational (720p)
+http://edu.leominster.tv/Edu/smil:Edu.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="LNKTVEducation.us",LNKTV Education (1080p)
+http://80tv.lincoln.ne.gov/live/live.m3u8
+#EXTINF:-1 tvg-id="LongmontPublicMediaChannel14.us",Longmont Public Media Channel (Channel 14) (Longmont CO) (720p)
+https://ch8reflector.longmontpublicmedia.org/hls/14/ch14.m3u8
+#EXTINF:-1 tvg-id="MINEDUIPTV1.pe",MINEDU IPTV 1 (320p) [Not 24/7]
+http://iptv.perueduca.pe:1935/canal1/canal11/playlist.m3u8
+#EXTINF:-1 tvg-id="MINEDUIPTV2.pe",MINEDU IPTV 2 (320p) [Not 24/7]
+http://iptv.perueduca.pe:1935/canal2/canal22/playlist.m3u8
+#EXTINF:-1 tvg-id="COETVChannel19.us",San Luis Obispo County Office of Education COE-TV Channel 19 (1080p)
+https://vod.slocoe.org/live-4/live/live.m3u8
+#EXTINF:-1 tvg-id="CNNIndonesia.id",CNN Indonesia
+http://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist_w1285822120_b384000_sleng.m3u8
+#EXTINF:-1 tvg-id="MetroTV.id",Metro TV
+http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/chunklist_w2006790992_b1492000_sleng.m3u8
+#EXTINF:-1 tvg-id="JobplusTV.kr",Job Plus TV (한국직업방송) (480p)
+https://live.jobplustv.or.kr/live/wowtvlive1.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="HLQSDTV.kr",OBS Gyeongin TV (OBS경인TV) (540p) [Not 24/7]
+https://vod.obs.co.kr:444/live/obsstream1/tv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="NBTWorld.th",NBT World
+https://thainews.prd.go.th/lv/live/ch1_L_L.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ShopChannel.jp",Shop Channel
+http://stream1.shopch.jp/HLS/out1/prog_index.m3u8
+#EXTINF:-1 tvg-id="BSYoshimoto.jp",BSよしもと web公式配信 (720p)
+https://drm.video.bsy.co.jp/ymbs/b25109aa4b3601/3jlga-ek36lwRZB71T4LHA/index_1.m3u8?t=1666350981&r=4eSBPopdfaJ3Qh
