@@ -11,7 +11,8 @@ every entry that names a known channel (tvg-id in iptv-org/database):
 - anything else: ignored.
 
 Usage: python scripts/discover.py --data DATABASE_DATA_DIR --listed DIST_INDEX_M3U
-Needs GITHUB_TOKEN for the code search API.
+Needs GITHUB_TOKEN for the code search API. Rate-limited searches are retried with backoff;
+if no playlist files are found at all the script exits non-zero and writes no report.
 """
 
 from __future__ import annotations
@@ -19,7 +20,9 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -35,14 +38,35 @@ MAX_FILES = 120
 MAX_BYTES = 5 * 1024 * 1024
 OFFICIAL = ROOT / "discovered" / "official.m3u"
 REPORT = ROOT / "discovered" / "REPORT.md"
+RETRIES = 4
+MAX_WAIT = 120  # seconds; keeps the job well inside its 30-minute timeout
 
 
 def github(url: str, token: str) -> dict:
+    """GET a GitHub API URL. Rate-limit responses (429, or 403 with a retry hint) are retried
+    with backoff, honouring Retry-After / X-RateLimit-Reset when GitHub sends them."""
     request = urllib.request.Request(url, headers={
         "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "User-Agent": "doubo-discover",
     })
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.load(response)
+    for attempt in range(RETRIES + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as error:
+            limited = error.code == 429 or (error.code == 403 and (
+                error.headers.get("Retry-After") or error.headers.get("X-RateLimit-Remaining") == "0"))
+            if not limited or attempt == RETRIES:
+                raise
+            if error.headers.get("Retry-After"):
+                wait = int(error.headers["Retry-After"])
+            elif error.headers.get("X-RateLimit-Reset"):
+                wait = int(error.headers["X-RateLimit-Reset"]) - int(time.time()) + 1
+            else:
+                wait = 15 * 2 ** attempt
+            wait = min(max(wait, 5), MAX_WAIT)
+            print(f"rate limited ({error.code}), retrying in {wait}s")
+            time.sleep(wait)
+    raise AssertionError("unreachable")
 
 
 def candidate_files(token: str) -> list[str]:
@@ -88,8 +112,13 @@ def main() -> None:
     known = {s.url for s in parse_playlist(args.listed.read_text(encoding="utf-8", errors="replace"), "listed")}
     known |= {s.url for s in parse_playlist(OFFICIAL.read_text(encoding="utf-8"), "discovered")}
 
+    files = candidate_files(token)
+    if not files:
+        # Every search failed or came back empty: fail the job instead of committing an empty report.
+        sys.exit("code search returned no playlist files; nothing to report")
+
     rows, added = [], []
-    for url in candidate_files(token):
+    for url in files:
         text = fetch(url)
         if not text or "#EXTINF" not in text:
             continue
