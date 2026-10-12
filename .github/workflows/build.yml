@@ -51,12 +51,25 @@ jobs:
           git commit -q -m "Directory build from iptv-org/database@${DATABASE_SHA} iptv-org/iptv@${IPTV_SHA}"
           git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" dist
 
-      # jsDelivr caches branch files for hours; ask it to refresh the files people load first.
+      # jsDelivr caches branch files for hours and throttles repeated purges, so purge, then
+      # check that the CDN serves this build's index.json (by generated_at) and retry with
+      # backoff. A copy that is still stale is reported as a warning, not a failed build.
       - name: Refresh jsDelivr cache
         continue-on-error: true
         run: |
-          for f in index.json index.m3u; do
-            curl -s -o /dev/null "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@dist/${f}"
+          want=$(jq -r .generated_at dist/index.json)
+          cdn="https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@dist"
+          for wait in 20 40 80 160 160; do
+            for f in index.json index.m3u; do
+              echo "purge ${f}: $(curl -s "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@dist/${f}" \
+                | jq -c '{status, throttled: [.paths[]?.throttled]}' 2>/dev/null || echo 'no JSON response')"
+            done
+            sleep "$wait"
+            got=$(curl -s "${cdn}/index.json" | jq -r .generated_at 2>/dev/null || true)
+            echo "jsDelivr index.json: generated_at=${got:-unreadable}, this build=${want}"
+            if [ "$got" = "$want" ]; then
+              echo "jsDelivr is serving this build"
+              exit 0
+            fi
           done
-          sleep 20
-          curl -s -o /dev/null -w "jsDelivr index.json: %{http_code}, %{size_download} bytes\n" "https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@dist/index.json"
+          echo "::warning::jsDelivr still serves index.json from ${got:-an unreadable copy}, not this build (${want}); it will catch up when its cache expires."
