@@ -24,8 +24,9 @@ import csv
 import ipaddress
 import json
 import re
+import urllib.error
 import urllib.request
-from collections import defaultdict
+from collections import Counter, defaultdict
 from dataclasses import dataclass, field, replace
 from datetime import datetime, timezone
 from pathlib import Path
@@ -295,16 +296,28 @@ def probe(stream: Stream, timeout: float = 10) -> bool:
         return False
 
 
-def resolve_redirects(streams: list[Stream], redirectors: set[str], workers: int = 64) -> list[Stream]:
+def resolve_redirects(streams: list[Stream], redirectors: set[str], workers: int = 16) -> list[Stream]:
     """Replace each stream on a redirect service (policy/redirectors.txt) with the address it
     lands on, so the policy judges, and the playlist lists, the real host. Streams that cannot be
     resolved, or land on another redirector, are dropped."""
+    failures: Counter[str] = Counter()
+    landed: Counter[str] = Counter()
+
     def resolve(s: Stream) -> Stream | None:
         try:
             final, _ = fetch(s.url, request_headers(s), 0, 10)
-        except Exception:
+        except urllib.error.HTTPError as error:
+            failures[f"HTTP {error.code}"] += 1
             return None
-        return None if registrable_domain(final) in redirectors else replace(s, url=final)
+        except Exception as error:
+            failures[type(getattr(error, "reason", error)).__name__] += 1
+            return None
+        domain = registrable_domain(final)
+        if domain in redirectors:
+            failures["redirect loop"] += 1
+            return None
+        landed[domain or "bare IP"] += 1
+        return replace(s, url=final)
 
     via = [s for s in streams if registrable_domain(s.url) in redirectors]
     if not via:
@@ -312,6 +325,8 @@ def resolve_redirects(streams: list[Stream], redirectors: set[str], workers: int
     with concurrent.futures.ThreadPoolExecutor(workers) as pool:
         resolved = dict(zip(map(id, via), pool.map(resolve, via)))
     print(f"redirects: {sum(r is not None for r in resolved.values())}/{len(via)} resolved")
+    print(f"  landed on: {dict(landed.most_common(8))}")
+    print(f"  failed: {dict(failures.most_common(8))}")
     kept = []
     for s in streams:
         target = resolved.get(id(s), s)

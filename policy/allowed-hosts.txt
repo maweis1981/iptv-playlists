@@ -39,6 +39,7 @@ tubi.video
 frequency.stream
 rakuten.tv
 samsungtv.plus
+pluto.tv
 dailymotion.com
 
 # Public, educational and government access TV
