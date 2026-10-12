@@ -23,3 +23,10 @@ sources:
     name: Streams found by scripts/discover.py
     kind: discovered
     path: discovered/official.m3u
+
+# What scripts/discover.py searches for first, and highlights in discovered/REPORT.md.
+# countries: ISO 3166-1 codes; categories: iptv-org category ids.
+discovery:
+  focus:
+    countries: [kr, jp, bn, kh, id, la, my, mm, ph, sg, th, tl, vn]
+    categories: [sports]
