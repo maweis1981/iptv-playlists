@@ -58,3 +58,5 @@ jobs:
           for f in index.json index.m3u; do
             curl -s -o /dev/null "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@dist/${f}"
           done
+          sleep 20
+          curl -s -o /dev/null -w "jsDelivr index.json: %{http_code}, %{size_download} bytes\n" "https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@dist/index.json"
