@@ -68,10 +68,17 @@ class Stream:
     url: str
     options: list[str] = field(default_factory=list)  # #EXTVLCOPT lines (referrer, user agent)
     source: str = "iptv-org"
+    # For a redirect link that refused us (geo-locked): the platform domain it is known to land
+    # on (policy/redirectors.txt). The policy judges that domain instead of the redirector's.
+    lands_on: str | None = None
 
     @property
     def geo_blocked(self) -> bool:
         return "[Geo-blocked]" in self.title
+
+    @property
+    def host_domain(self) -> str | None:
+        return self.lands_on or registrable_domain(self.url)
 
 
 def registrable_domain(url: str) -> str | None:
@@ -116,7 +123,7 @@ class Policy:
         return self.official_domains.get(channel.id, set()) | ({website} if website else set())
 
     def is_official(self, stream: Stream, channel: Channel) -> bool:
-        return registrable_domain(stream.url) in self.own_domains(channel)
+        return stream.host_domain in self.own_domains(channel)
 
     def admits(self, stream: Stream, channel: Channel | None) -> bool:
         if channel is None or channel.is_nsfw or channel.closed or "xxx" in channel.categories:
@@ -125,7 +132,7 @@ class Policy:
             return False
         if urlsplit(stream.url).scheme not in ("http", "https"):
             return False
-        domain = registrable_domain(stream.url)
+        domain = stream.host_domain
         if domain is None:
             return False
         return domain in self.own_domains(channel) or domain in self.allowed_hosts
@@ -296,37 +303,66 @@ def probe(stream: Stream, timeout: float = 10) -> bool:
         return False
 
 
-def resolve_redirects(streams: list[Stream], redirectors: set[str], workers: int = 16) -> list[Stream]:
-    """Replace each stream on a redirect service (policy/redirectors.txt) with the address it
-    lands on, so the policy judges, and the playlist lists, the real host. Streams that cannot be
-    resolved, or land on another redirector, are dropped."""
+@dataclass(frozen=True)
+class Redirectors:
+    """policy/redirectors.txt: redirect services, and the platform each link prefix lands on."""
+    domains: frozenset[str]
+    lands_on: tuple[tuple[str, str], ...]  # (URL prefix without scheme, platform domain)
+
+    @classmethod
+    def load(cls, path: Path) -> Redirectors:
+        domains, lands_on = set(), []
+        for line in load_lines(path):
+            target, _, platform = line.partition(" ")
+            if platform.strip():
+                lands_on.append((target, platform.strip()))
+            domains.add(target.split("/")[0])
+        return cls(frozenset(domains), tuple(lands_on))
+
+    def platform_of(self, url: str) -> str | None:
+        bare = url.split("://", 1)[-1]
+        return next((platform for prefix, platform in self.lands_on if bare.startswith(prefix)), None)
+
+
+def resolve_redirects(streams: list[Stream], redirectors: Redirectors, workers: int = 16) -> list[Stream]:
+    """Replace each stream on a redirect service with the address it lands on, so the policy
+    judges, and the playlist lists, the real host. A link the service refuses with 403 (it is
+    geo-locked to another region) is kept as is, labelled geo-blocked and judged by the platform
+    its prefix is known to land on; other failures and redirect loops are dropped."""
     failures: Counter[str] = Counter()
     landed: Counter[str] = Counter()
+    kept_geo: Counter[str] = Counter()
 
     def resolve(s: Stream) -> Stream | None:
         try:
             final, _ = fetch(s.url, request_headers(s), 0, 10)
         except urllib.error.HTTPError as error:
             failures[f"HTTP {error.code}"] += 1
+            platform = redirectors.platform_of(s.url)
+            if error.code == 403 and platform:
+                kept_geo[platform] += 1
+                title = s.title if s.geo_blocked else f"{s.title} [Geo-blocked]"
+                return replace(s, title=title, lands_on=platform)
             return None
         except Exception as error:
             failures[type(getattr(error, "reason", error)).__name__] += 1
             return None
         domain = registrable_domain(final)
-        if domain in redirectors:
+        if domain in redirectors.domains:
             failures["redirect loop"] += 1
             return None
         landed[domain or "bare IP"] += 1
         return replace(s, url=final)
 
-    via = [s for s in streams if registrable_domain(s.url) in redirectors]
+    via = [s for s in streams if registrable_domain(s.url) in redirectors.domains]
     if not via:
         return streams
     with concurrent.futures.ThreadPoolExecutor(workers) as pool:
         resolved = dict(zip(map(id, via), pool.map(resolve, via)))
-    print(f"redirects: {sum(r is not None for r in resolved.values())}/{len(via)} resolved")
+    print(f"redirects: {sum(landed.values())}/{len(via)} resolved, {sum(kept_geo.values())} kept as geo-blocked")
     print(f"  landed on: {dict(landed.most_common(8))}")
     print(f"  failed: {dict(failures.most_common(8))}")
+    print(f"  refused (403), kept as geo-blocked: {dict(kept_geo.most_common(8))}")
     kept = []
     for s in streams:
         target = resolved.get(id(s), s)
@@ -378,7 +414,7 @@ def build(data: Path, streams_dir: Path, out: Path, check: bool, registry: Path 
     candidates = parse_streams(streams_dir) + (load_sources(registry) if registry else [])
     # Only follow redirects for identified channels; the rest would be left out anyway.
     candidates = resolve_redirects(
-        [s for s in candidates if s.channel_id in channels], load_lines(ROOT / "policy" / "redirectors.txt")
+        [s for s in candidates if s.channel_id in channels], Redirectors.load(ROOT / "policy" / "redirectors.txt")
     )
     listed = [s for s in candidates if policy.admits(s, channels.get(s.channel_id))]
     if check:
