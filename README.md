@@ -40,7 +40,7 @@ Full details: [POLICY.md](POLICY.md).
 
 ## Sources
 
-Channel data and links come from the community projects [iptv-org/database](https://github.com/iptv-org/database) and [iptv-org/iptv](https://github.com/iptv-org/iptv), filtered by the stricter policy above.
+Channel data and links come from the community projects [iptv-org/database](https://github.com/iptv-org/database) and [iptv-org/iptv](https://github.com/iptv-org/iptv), filtered by the stricter policy above. Other curated public lists are merged too (see [sources.yml](sources.yml)), and a weekly job searches GitHub for public playlists: streams served from a channel’s own website domain are added automatically, while streams on shared CDNs are only listed in [discovered/REPORT.md](discovered/REPORT.md) for review.
 
 ## Takedown
 

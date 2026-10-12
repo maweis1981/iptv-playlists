@@ -35,7 +35,7 @@ jobs:
           echo "IPTV_SHA=$(git -C ../iptv rev-parse --short HEAD)" >> "$GITHUB_ENV"
 
       - name: Build
-        run: python scripts/build.py --data ../database/data --streams ../iptv/streams --out dist --probe
+        run: python scripts/build.py --data ../database/data --streams ../iptv/streams --sources sources.yml --out dist --probe
 
       # Generated playlists live on the dist branch; main only holds code and policy.
       - name: Publish to dist branch

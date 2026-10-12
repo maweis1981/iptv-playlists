@@ -40,7 +40,7 @@ Chi tiết đầy đủ: [POLICY.md](POLICY.md).
 
 ## Nguồn dữ liệu
 
-Dữ liệu và liên kết kênh lấy từ các dự án cộng đồng [iptv-org/database](https://github.com/iptv-org/database) và [iptv-org/iptv](https://github.com/iptv-org/iptv), được lọc theo chính sách chặt chẽ hơn ở trên.
+Dữ liệu và liên kết kênh lấy từ các dự án cộng đồng [iptv-org/database](https://github.com/iptv-org/database) và [iptv-org/iptv](https://github.com/iptv-org/iptv), được lọc theo chính sách chặt chẽ hơn ở trên. Các danh sách công khai khác cũng được gộp vào (xem [sources.yml](sources.yml)), và mỗi tuần một tác vụ tự động tìm danh sách phát công khai trên GitHub: luồng từ tên miền trang web chính thức của kênh được thêm tự động, còn luồng trên CDN dùng chung chỉ được ghi vào [discovered/REPORT.md](discovered/REPORT.md) để xem xét.
 
 ## Yêu cầu gỡ bỏ
 

@@ -4,7 +4,8 @@ Domain model
 ------------
 Channel   a TV channel from iptv-org/database (id, country, categories, website).
 Feed      a variant of a channel (SD/HD/regional) carrying its languages.
-Stream    a URL submitted to iptv-org/iptv, pointing at one channel feed.
+Stream    a URL from one of the sources (iptv-org/iptv, other curated lists in
+          sources.yml, or streams found by scripts/discover.py), pointing at one channel feed.
 Policy    decides whether a stream may be listed. Only streams served by the
           channel's own website domain or by an allowlisted broadcast CDN /
           official FAST platform pass; everything else is left out.
@@ -30,6 +31,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 
 import tldextract
+import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 _extract = tldextract.TLDExtract(suffix_list_urls=())  # bundled public suffix list, no network
@@ -63,6 +65,7 @@ class Stream:
     title: str
     url: str
     options: list[str] = field(default_factory=list)  # #EXTVLCOPT lines (referrer, user agent)
+    source: str = "iptv-org"
 
     @property
     def geo_blocked(self) -> bool:
@@ -140,22 +143,59 @@ def load_lines(path: Path) -> set[str]:
     return {l.strip() for l in path.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")}
 
 
+MARKERS = re.compile(r"[\u24b6-\u24e9]")  # circled-letter flags some lists append to titles
+
+
+def parse_playlist(text: str, source: str) -> list[Stream]:
+    """Streams of one M3U playlist. Free-TV style markers are stripped from titles; its
+    geo-block marker (Ⓖ) becomes the "[Geo-blocked]" label the probe understands."""
+    streams = []
+    pending: Stream | None = None
+    for line in text.splitlines():
+        line = line.strip()
+        if line.startswith("#EXTINF"):
+            tvg_id = re.search(r'tvg-id="([^"]*)"', line)
+            channel_id, _, feed_id = (tvg_id.group(1) if tvg_id else "").partition("@")
+            title = line.rsplit(",", 1)[-1].strip()
+            if "\u24bc" in title and "[Geo-blocked]" not in title:
+                title += " [Geo-blocked]"
+            title = re.sub(r"\s+", " ", MARKERS.sub("", title)).strip()
+            pending = Stream(channel_id, feed_id, title, "", source=source)
+        elif line.startswith("#EXTVLCOPT") and pending:
+            pending.options.append(line)
+        elif line and not line.startswith("#") and pending:
+            pending.url = line
+            streams.append(pending)
+            pending = None
+    return streams
+
+
 def parse_streams(streams_dir: Path) -> list[Stream]:
     streams = []
     for path in sorted(streams_dir.glob("*.m3u")):
-        pending: Stream | None = None
-        for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
-            line = line.strip()
-            if line.startswith("#EXTINF"):
-                tvg_id = re.search(r'tvg-id="([^"]*)"', line)
-                channel_id, _, feed_id = (tvg_id.group(1) if tvg_id else "").partition("@")
-                pending = Stream(channel_id, feed_id, line.rsplit(",", 1)[-1].strip(), "")
-            elif line.startswith("#EXTVLCOPT") and pending:
-                pending.options.append(line)
-            elif line and not line.startswith("#") and pending:
-                pending.url = line
-                streams.append(pending)
-                pending = None
+        streams += parse_playlist(path.read_text(encoding="utf-8", errors="replace"), "iptv-org")
+    return streams
+
+
+def load_sources(registry: Path) -> list[Stream]:
+    """Additional playlists from sources.yml: remote curated lists and the discovered list."""
+    streams = []
+    for src in yaml.safe_load(registry.read_text(encoding="utf-8"))["sources"]:
+        if not src.get("enabled", True) or src["id"] == "iptv-org":
+            continue
+        try:
+            if src.get("path"):
+                text = (ROOT / src["path"]).read_text(encoding="utf-8")
+            else:
+                request = urllib.request.Request(src["url"], headers={"User-Agent": USER_AGENT})
+                with urllib.request.urlopen(request, timeout=60) as response:
+                    text = response.read().decode("utf-8", errors="replace")
+        except OSError as error:
+            print(f"source {src['id']} skipped: {error}")
+            continue
+        found = parse_playlist(text, src["id"])
+        print(f"source {src['id']}: {len(found)} entries")
+        streams += found
     return streams
 
 
@@ -264,7 +304,7 @@ def write_playlist(path: Path, entries: list[Entry]) -> None:
     path.write_text("#EXTM3U\n" + "".join(e.m3u() + "\n" for e in ordered), encoding="utf-8")
 
 
-def build(data: Path, streams_dir: Path, out: Path, check: bool) -> dict:
+def build(data: Path, streams_dir: Path, out: Path, check: bool, registry: Path | None = None) -> dict:
     channels, feeds, logos = load_channels(data), load_feeds(data), load_logos(data)
     language_names = {r["code"]: r["name"] for r in read_csv(data / "languages.csv")}
     policy = Policy(
@@ -272,7 +312,8 @@ def build(data: Path, streams_dir: Path, out: Path, check: bool) -> dict:
         blocked_channels={r["channel"] for r in read_csv(data / "blocklist.csv")},
         takedowns={r["target"] for r in read_csv(ROOT / "policy" / "takedown.csv")},
     )
-    listed = [s for s in parse_streams(streams_dir) if policy.admits(s, channels.get(s.channel_id))]
+    candidates = parse_streams(streams_dir) + (load_sources(registry) if registry else [])
+    listed = [s for s in candidates if policy.admits(s, channels.get(s.channel_id))]
     if check:
         listed = keep_playable(listed)
 
@@ -310,6 +351,7 @@ def build(data: Path, streams_dir: Path, out: Path, check: bool) -> dict:
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "streams": len(entries),
         "channels": len({e.channel.id for e in entries}),
+        "sources": {src: sum(e.stream.source == src for e in entries) for src in sorted({e.stream.source for e in entries})},
         "countries": sorted(
             ({"code": k, "streams": len(v), "channels": channel_names(v)} for k, v in by_country.items()),
             key=lambda c: c["code"],
@@ -335,9 +377,10 @@ def main() -> None:
     parser.add_argument("--data", type=Path, required=True, help="iptv-org/database data/ directory")
     parser.add_argument("--streams", type=Path, required=True, help="iptv-org/iptv streams/ directory")
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--sources", type=Path, help="sources.yml with additional playlists")
     parser.add_argument("--probe", action="store_true", help="drop streams whose first media segment cannot be fetched")
     args = parser.parse_args()
-    index = build(args.data, args.streams, args.out, args.probe)
+    index = build(args.data, args.streams, args.out, args.probe, args.sources)
     print(f"{index['channels']} channels, {index['streams']} streams, {len(index['countries'])} countries")
 
 

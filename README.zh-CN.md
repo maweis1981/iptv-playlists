@@ -40,7 +40,7 @@
 
 ## 数据来源
 
-频道资料与链接来自社区项目 [iptv-org/database](https://github.com/iptv-org/database) 和 [iptv-org/iptv](https://github.com/iptv-org/iptv)，并按上述更严格的规则筛选。
+频道资料与链接来自社区项目 [iptv-org/database](https://github.com/iptv-org/database) 和 [iptv-org/iptv](https://github.com/iptv-org/iptv)，并按上述更严格的规则筛选。其他公开维护的列表也会合并进来（见 [sources.yml](sources.yml)）；每周还会自动搜索 GitHub 上公开的播放列表：来自频道官方网站域名的直播流自动收录，来自公共 CDN 的只列入 [discovered/REPORT.md](discovered/REPORT.md) 供人工审核。
 
 ## 版权投诉与下架
 

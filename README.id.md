@@ -40,7 +40,7 @@ Detail lengkap: [POLICY.md](POLICY.md).
 
 ## Sumber
 
-Data dan tautan saluran berasal dari proyek komunitas [iptv-org/database](https://github.com/iptv-org/database) dan [iptv-org/iptv](https://github.com/iptv-org/iptv), disaring dengan kebijakan yang lebih ketat di atas.
+Data dan tautan saluran berasal dari proyek komunitas [iptv-org/database](https://github.com/iptv-org/database) dan [iptv-org/iptv](https://github.com/iptv-org/iptv), disaring dengan kebijakan yang lebih ketat di atas. Daftar publik lain yang dikelola juga digabungkan (lihat [sources.yml](sources.yml)), dan tugas mingguan mencari playlist publik di GitHub: stream dari domain situs resmi saluran ditambahkan otomatis, sedangkan stream di CDN bersama hanya dicatat di [discovered/REPORT.md](discovered/REPORT.md) untuk ditinjau.
 
 ## Permintaan penghapusan
 

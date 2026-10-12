@@ -1,0 +1,25 @@
+# Where streams come from. Every stream, whatever its source, must pass POLICY.md
+# (official domain or allowlisted host, not blocklisted, plays) before it is listed.
+#
+# kind: curated    a maintained public list, merged on every build
+#       discovered streams that scripts/discover.py found on an official channel domain
+# Changes to this file go through a pull request.
+sources:
+  - id: iptv-org
+    name: iptv-org/iptv
+    kind: curated
+    homepage: https://github.com/iptv-org/iptv
+    license: Unlicense (public domain)
+    # cloned by the workflow; parsed from its streams/ directory
+
+  - id: free-tv
+    name: Free-TV/IPTV
+    kind: curated
+    homepage: https://github.com/Free-TV/IPTV
+    url: https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+    license: not stated; only links are used, attributed here
+
+  - id: discovered
+    name: Streams found by scripts/discover.py
+    kind: discovered
+    path: discovered/official.m3u

@@ -40,7 +40,7 @@
 
 ## แหล่งข้อมูล
 
-ข้อมูลและลิงก์ช่องมาจากโครงการชุมชน [iptv-org/database](https://github.com/iptv-org/database) และ [iptv-org/iptv](https://github.com/iptv-org/iptv) คัดกรองตามนโยบายที่เข้มงวดกว่าด้านบน
+ข้อมูลและลิงก์ช่องมาจากโครงการชุมชน [iptv-org/database](https://github.com/iptv-org/database) และ [iptv-org/iptv](https://github.com/iptv-org/iptv) คัดกรองตามนโยบายที่เข้มงวดกว่าด้านบน นอกจากนี้ยังรวมรายการสาธารณะอื่นที่มีผู้ดูแล (ดู [sources.yml](sources.yml)) และมีงานรายสัปดาห์ค้นหาเพลย์ลิสต์สาธารณะบน GitHub: สตรีมจากโดเมนเว็บไซต์ทางการของช่องจะถูกเพิ่มอัตโนมัติ ส่วนสตรีมบน CDN ทั่วไปจะถูกบันทึกใน [discovered/REPORT.md](discovered/REPORT.md) เพื่อให้คนตรวจสอบ
 
 ## คำขอนำออก
 

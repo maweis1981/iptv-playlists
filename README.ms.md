@@ -40,7 +40,7 @@ Butiran penuh: [POLICY.md](POLICY.md).
 
 ## Sumber
 
-Data dan pautan saluran daripada projek komuniti [iptv-org/database](https://github.com/iptv-org/database) dan [iptv-org/iptv](https://github.com/iptv-org/iptv), ditapis dengan dasar yang lebih ketat di atas.
+Data dan pautan saluran daripada projek komuniti [iptv-org/database](https://github.com/iptv-org/database) dan [iptv-org/iptv](https://github.com/iptv-org/iptv), ditapis dengan dasar yang lebih ketat di atas. Senarai awam lain yang diselenggara turut digabungkan (lihat [sources.yml](sources.yml)), dan tugas mingguan mencari senarai main awam di GitHub: strim daripada domain laman web rasmi saluran ditambah secara automatik, manakala strim pada CDN awam hanya disenaraikan dalam [discovered/REPORT.md](discovered/REPORT.md) untuk semakan.
 
 ## Permintaan pengeluaran
 

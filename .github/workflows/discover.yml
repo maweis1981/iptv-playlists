@@ -1,0 +1,48 @@
+name: Discover sources
+
+# Weekly: search GitHub for public M3U playlists, add streams served from a channel's own
+# website domain to discovered/official.m3u, and refresh discovered/REPORT.md.
+# The daily build then checks them like every other stream.
+on:
+  schedule:
+    - cron: "41 1 * * 1"   # Mondays, 01:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Fetch channel database and current listing
+        run: |
+          git clone -q --depth 1 https://github.com/iptv-org/database ../database
+          curl -fsSL -o ../index.m3u "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/dist/index.m3u"
+
+      - name: Discover
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover.py --data ../database/data --listed ../index.m3u
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discovered/
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Update discovered sources"
+          git push -q
