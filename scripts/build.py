@@ -27,7 +27,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 
 import tldextract
 
@@ -161,25 +161,80 @@ def parse_streams(streams_dir: Path) -> list[Stream]:
 
 # ---------------------------------------------------------------- probing
 
-def probe(stream: Stream, timeout: float = 10) -> bool:
-    headers = {"User-Agent": "Mozilla/5.0 (Doubo directory check)"}
+USER_AGENT = "Mozilla/5.0 (Doubo directory check)"
+MAX_PLAYLIST_BYTES = 512 * 1024
+
+
+def request_headers(stream: Stream) -> dict[str, str]:
+    headers = {"User-Agent": USER_AGENT}
     for opt in stream.options:
         key, _, value = opt.removeprefix("#EXTVLCOPT:").partition("=")
         headers[{"http-referrer": "Referer", "http-user-agent": "User-Agent"}.get(key, key)] = value
-    request = urllib.request.Request(stream.url, headers=headers)
+    return headers
+
+
+def fetch(url: str, headers: dict[str, str], limit: int, timeout: float) -> tuple[str, bytes]:
+    """Return the final URL (after redirects) and up to `limit` bytes of the body."""
+    request = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        if response.status >= 400:
+            raise OSError(response.status)
+        return response.geturl(), response.read(limit)
+
+
+def looks_like_media(data: bytes) -> bool:
+    """MPEG-TS, fragmented MP4, or audio-only (ID3 / ADTS) segment."""
+    if len(data) >= 189 and data[0] == 0x47 and data[188] == 0x47:
+        return True
+    if data[4:8] in (b"ftyp", b"styp", b"moof", b"sidx", b"moov"):
+        return True
+    return data[:3] == b"ID3" or (len(data) > 1 and data[0] == 0xFF and data[1] & 0xF0 == 0xF0)
+
+
+def first_uri(playlist: str, base: str) -> str | None:
+    for line in playlist.splitlines():
+        line = line.strip()
+        if line and not line.startswith("#"):
+            return urljoin(base, line)
+    return None
+
+
+def probe(stream: Stream, timeout: float = 10) -> bool:
+    """Follow the stream the way a player would: master playlist, then a variant,
+    then the first media segment, and check that the segment is real audio/video."""
+    headers = request_headers(stream)
     try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            return response.status < 400 and bool(response.read(512))
+        url, body = fetch(stream.url, headers, MAX_PLAYLIST_BYTES, timeout)
+        for _ in range(3):  # master -> variant -> (rarely) one more redirect playlist
+            if looks_like_media(body):
+                return True
+            text = body.decode("utf-8", errors="replace")
+            if "<MPD" in text:
+                return True  # DASH manifest; segment templates are not resolved here
+            if not text.lstrip("\ufeff").startswith("#EXTM3U"):
+                return False
+            next_url = first_uri(text, url)
+            if next_url is None:
+                return False
+            is_segment = "#EXT-X-STREAM-INF" not in text
+            if is_segment and re.search(r"#EXT-X-KEY:.*METHOD=(AES-128|SAMPLE-AES)", text):
+                fetch(next_url, headers, 1024, timeout)
+                return True  # encrypted segments cannot be inspected, but they are served
+            url, body = fetch(next_url, headers, 4096 if is_segment else MAX_PLAYLIST_BYTES, timeout)
+            if is_segment:
+                return looks_like_media(body)
+        return False
     except Exception:
         return False
 
 
-def keep_reachable(streams: list[Stream], workers: int = 64) -> list[Stream]:
+def keep_playable(streams: list[Stream], workers: int = 64) -> list[Stream]:
     # Geo-blocked streams cannot be checked from a CI runner, so they are kept as listed.
     to_check = [s for s in streams if not s.geo_blocked]
     with concurrent.futures.ThreadPoolExecutor(workers) as pool:
-        reachable = {id(s) for s, ok in zip(to_check, pool.map(probe, to_check)) if ok}
-    return [s for s in streams if s.geo_blocked or id(s) in reachable]
+        playable = {id(s) for s, ok in zip(to_check, pool.map(probe, to_check)) if ok}
+    print(f"check: {len(playable)}/{len(to_check)} playable, {len(streams) - len(to_check)} geo-blocked kept unchecked")
+    return [s for s in streams if s.geo_blocked or id(s) in playable]
 
 
 # ---------------------------------------------------------------- output
@@ -219,7 +274,7 @@ def build(data: Path, streams_dir: Path, out: Path, check: bool) -> dict:
     )
     listed = [s for s in parse_streams(streams_dir) if policy.admits(s, channels.get(s.channel_id))]
     if check:
-        listed = keep_reachable(listed)
+        listed = keep_playable(listed)
 
     entries = []
     seen_urls = set()
@@ -280,7 +335,7 @@ def main() -> None:
     parser.add_argument("--data", type=Path, required=True, help="iptv-org/database data/ directory")
     parser.add_argument("--streams", type=Path, required=True, help="iptv-org/iptv streams/ directory")
     parser.add_argument("--out", type=Path, required=True)
-    parser.add_argument("--probe", action="store_true", help="drop streams that do not respond")
+    parser.add_argument("--probe", action="store_true", help="drop streams whose first media segment cannot be fetched")
     args = parser.parse_args()
     index = build(args.data, args.streams, args.out, args.probe)
     print(f"{index['channels']} channels, {index['streams']} streams, {len(index['countries'])} countries")

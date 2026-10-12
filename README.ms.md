@@ -34,7 +34,7 @@ Pautan alternatif: jika jsDelivr perlahan atau disekat di rangkaian anda, gantik
 1. Hanya strim daripada domain laman web rasmi saluran, atau daripada CDN penyiaran / platform penstriman percuma rasmi dalam [senarai dibenarkan](policy/allowed-hosts.txt).
 2. Tiada saluran berbayar, kandungan dewasa atau saluran yang telah ditutup.
 3. Saluran dalam senarai sekatan iptv-org atau [senarai pengeluaran](policy/takedown.csv) kami tidak disenaraikan.
-4. Strim yang tidak bertindak balas tidak dimasukkan dalam binaan harian.
+4. Setiap binaan harian menyemak setiap strim sehingga segmen video pertama dan hanya menyimpan yang boleh dimainkan; strim bertanda sekatan geografi dikekalkan kerana hanya boleh disemak dari negara asalnya.
 
 Butiran penuh: [POLICY.md](POLICY.md).
 
@@ -57,4 +57,4 @@ Cadangan untuk senarai hos dibenarkan dialu-alukan sebagai pull request; sila te
 
 ## Lesen
 
-[The Unlicense](LICENSE) (domain awam).
+Kod: [MIT](LICENSE). Senarai main dan data indeks: [CC BY 4.0](LICENSE-DATA.md); sila nyatakan “Doubo Public Channel Directory” apabila menerbitkan semula atau membina di atas senarai ini. Lesen ini hanya meliputi pemilihan pautan kami; setiap strim milik penyiarnya.

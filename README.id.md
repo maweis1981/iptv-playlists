@@ -34,7 +34,7 @@ Tautan cadangan: jika jsDelivr lambat atau diblokir di jaringan Anda, ganti `htt
 1. Hanya stream dari domain situs resmi saluran, atau dari CDN penyiaran / platform streaming gratis resmi dalam [daftar izin](policy/allowed-hosts.txt).
 2. Tidak ada saluran berbayar, konten dewasa, atau saluran yang sudah tutup.
 3. Saluran dalam daftar blokir iptv-org atau [daftar penghapusan](policy/takedown.csv) kami tidak dicantumkan.
-4. Stream yang tidak merespons tidak masuk build harian.
+4. Setiap build harian memeriksa setiap stream hingga segmen video pertama dan hanya menyimpan yang bisa diputar; stream bertanda pembatasan wilayah tetap dicantumkan karena hanya bisa diperiksa dari negara asalnya.
 
 Detail lengkap: [POLICY.md](POLICY.md).
 
@@ -57,4 +57,4 @@ Usulan untuk daftar izin host diterima melalui pull request; jelaskan mengapa ho
 
 ## Lisensi
 
-[The Unlicense](LICENSE) (domain publik).
+Kode: [MIT](LICENSE). Playlist dan data indeks: [CC BY 4.0](LICENSE-DATA.md); cantumkan “Doubo Public Channel Directory” saat menerbitkan ulang atau mengembangkan daftar ini. Lisensi ini hanya mencakup pilihan tautan kami; setiap stream milik penyiarnya.

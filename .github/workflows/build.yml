@@ -43,7 +43,7 @@ jobs:
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cp ../LICENSE ../POLICY.md .
+          cp ../LICENSE-DATA.md LICENSE.md && cp ../POLICY.md .
           git init -q -b dist
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

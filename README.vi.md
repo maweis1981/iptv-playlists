@@ -34,7 +34,7 @@ Liên kết dự phòng: nếu jsDelivr chậm hoặc bị chặn trên mạng c
 1. Chỉ đưa vào luồng phát từ tên miền trang web chính thức của kênh, hoặc từ CDN phát sóng / nền tảng xem miễn phí chính thức trong [danh sách cho phép](policy/allowed-hosts.txt).
 2. Không có kênh trả phí, nội dung người lớn hay kênh đã ngừng phát sóng.
 3. Loại bỏ các kênh trong danh sách chặn của iptv-org hoặc [danh sách gỡ bỏ](policy/takedown.csv) của chúng tôi.
-4. Các luồng không phản hồi sẽ không có trong bản dựng hằng ngày.
+4. Mỗi bản dựng hằng ngày kiểm tra từng luồng đến phân đoạn video đầu tiên và chỉ giữ lại luồng phát được; các luồng bị giới hạn khu vực vẫn được giữ vì chỉ có thể kiểm tra từ trong nước sở tại.
 
 Chi tiết đầy đủ: [POLICY.md](POLICY.md).
 
@@ -57,4 +57,4 @@ Hoan nghênh đề xuất bổ sung danh sách cho phép qua pull request; vui l
 
 ## Giấy phép
 
-[The Unlicense](LICENSE) (phạm vi công cộng).
+Mã nguồn: [MIT](LICENSE). Danh sách phát và dữ liệu chỉ mục: [CC BY 4.0](LICENSE-DATA.md); vui lòng ghi nguồn “Doubo Public Channel Directory” khi đăng lại hoặc phát triển từ danh sách này. Giấy phép chỉ áp dụng cho việc chọn lọc liên kết của chúng tôi; mỗi luồng phát thuộc về đài phát sóng của nó.

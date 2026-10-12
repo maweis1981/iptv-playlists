@@ -34,7 +34,7 @@ Mirror: if jsDelivr is slow or blocked on your network, replace `https://cdn.jsd
 1. Only streams served from the channel's own website domain, or from a broadcast-grade CDN / official free streaming platform on the [allowlist](policy/allowed-hosts.txt).
 2. No paid channels, no adult content, no closed channels.
 3. Channels on the iptv-org blocklist or our [takedown list](policy/takedown.csv) are excluded.
-4. Streams that do not respond are left out of each daily build.
+4. Every daily build follows each stream to its first video segment and keeps only the ones that play; streams marked geo-blocked are kept because they can only be checked from their own country.
 
 Full details: [POLICY.md](POLICY.md).
 
@@ -57,4 +57,4 @@ Suggestions for the host allowlist are welcome as pull requests; please explain 
 
 ## License
 
-[The Unlicense](LICENSE) (public domain).
+Code: [MIT](LICENSE). Playlists and index data: [CC BY 4.0](LICENSE-DATA.md); please credit “Doubo Public Channel Directory” when you republish or build on the list. The license covers our selection of links only; every stream belongs to its broadcaster.
