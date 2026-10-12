@@ -14,6 +14,6 @@ This directory is an index only: it stores, transcodes and relays no video and o
 
 ## 下架 · Takedown
 
-提交[下架申请](https://github.com/maweis1981/iptv-playlists/issues/new?template=takedown.yml)，或在申请中注明频道 ID / 链接。处理后条目会写入 `policy/takedown.csv`，下一次构建即移除。
+提交[下架申请](https://github.com/streamline-iptv/iptv-playlists/issues/new?template=takedown.yml)，或在申请中注明频道 ID / 链接。处理后条目会写入 `policy/takedown.csv`，下一次构建即移除。
 
-File a [takedown request](https://github.com/maweis1981/iptv-playlists/issues/new?template=takedown.yml) naming the channel ID or link. Once handled, the entry is added to `policy/takedown.csv` and disappears from the next build.
+File a [takedown request](https://github.com/streamline-iptv/iptv-playlists/issues/new?template=takedown.yml) naming the channel ID or link. Once handled, the entry is added to `policy/takedown.csv` and disappears from the next build.

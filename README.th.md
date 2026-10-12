@@ -12,22 +12,22 @@
 
 | เพลย์ลิสต์ | ลิงก์ |
 | --- | --- |
-| ทุกช่อง | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.m3u` |
-| ตามประเทศ | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/<code>.m3u` (เช่น `my`, `id`, `vn`, `th`) |
-| ตามหมวดหมู่ | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/categories/<id>.m3u` (เช่น `news`, `kids`, `sports`) |
-| ตามภาษา | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/languages/<code>.m3u` (รหัส ISO 639-3, เช่น `msa`, `ind`, `vie`) |
-| ดัชนีสำหรับเครื่อง | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.json` |
+| ทุกช่อง | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.m3u` |
+| ตามประเทศ | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/<code>.m3u` (เช่น `my`, `id`, `vn`, `th`) |
+| ตามหมวดหมู่ | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/categories/<id>.m3u` (เช่น `news`, `kids`, `sports`) |
+| ตามภาษา | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/languages/<code>.m3u` (รหัส ISO 639-3, เช่น `msa`, `ind`, `vie`) |
+| ดัชนีสำหรับเครื่อง | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.json` |
 
 ### ประเทศยอดนิยม
 
-- มาเลเซีย: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/my.m3u`
-- อินโดนีเซีย: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/id.m3u`
-- เวียดนาม: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/vn.m3u`
-- ไทย: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/th.m3u`
-- ฟิลิปปินส์: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/ph.m3u`
-- สิงคโปร์: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/sg.m3u`
+- มาเลเซีย: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/my.m3u`
+- อินโดนีเซีย: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/id.m3u`
+- เวียดนาม: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/vn.m3u`
+- ไทย: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/th.m3u`
+- ฟิลิปปินส์: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
+- สิงคโปร์: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-ลิงก์สำรอง: หาก jsDelivr ช้าหรือถูกบล็อกในเครือข่ายของคุณ ให้แทนที่ `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist` ด้วย `https://raw.githubusercontent.com/maweis1981/iptv-playlists/dist`.
+ลิงก์สำรอง: หาก jsDelivr ช้าหรือถูกบล็อกในเครือข่ายของคุณ ให้แทนที่ `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` ด้วย `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
 
 ## หลักการคัดเลือก
 
@@ -44,7 +44,7 @@
 
 ## คำขอนำออก
 
-เจ้าของสิทธิ์สามารถขอให้นำช่องหรือลิงก์ออกได้ผ่าน[คำขอนำออก](https://github.com/maweis1981/iptv-playlists/issues/new?template=takedown.yml) เราจะดำเนินการภายใน 72 ชั่วโมง และมีผลในการสร้างรายวันครั้งถัดไป
+เจ้าของสิทธิ์สามารถขอให้นำช่องหรือลิงก์ออกได้ผ่าน[คำขอนำออก](https://github.com/streamline-iptv/iptv-playlists/issues/new?template=takedown.yml) เราจะดำเนินการภายใน 72 ชั่วโมง และมีผลในการสร้างรายวันครั้งถัดไป
 
 ## โครงสร้างที่เก็บ
 

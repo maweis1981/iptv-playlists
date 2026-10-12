@@ -12,22 +12,22 @@ Dán bất kỳ liên kết nào dưới đây vào [Doubo](https://doubo.tv) ho
 
 | Danh sách phát | Liên kết |
 | --- | --- |
-| Tất cả kênh | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.m3u` |
-| Theo quốc gia | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/<code>.m3u` (vd. `my`, `id`, `vn`, `th`) |
-| Theo thể loại | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/categories/<id>.m3u` (vd. `news`, `kids`, `sports`) |
-| Theo ngôn ngữ | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/languages/<code>.m3u` (mã ISO 639-3, vd. `msa`, `ind`, `vie`) |
-| Chỉ mục cho máy đọc | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.json` |
+| Tất cả kênh | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.m3u` |
+| Theo quốc gia | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/<code>.m3u` (vd. `my`, `id`, `vn`, `th`) |
+| Theo thể loại | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/categories/<id>.m3u` (vd. `news`, `kids`, `sports`) |
+| Theo ngôn ngữ | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/languages/<code>.m3u` (mã ISO 639-3, vd. `msa`, `ind`, `vie`) |
+| Chỉ mục cho máy đọc | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.json` |
 
 ### Quốc gia phổ biến
 
-- Malaysia: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/my.m3u`
-- Indonesia: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/id.m3u`
-- Việt Nam: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/vn.m3u`
-- Thái Lan: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/th.m3u`
-- Philippines: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/ph.m3u`
-- Singapore: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/sg.m3u`
+- Malaysia: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/my.m3u`
+- Indonesia: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/id.m3u`
+- Việt Nam: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/vn.m3u`
+- Thái Lan: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/th.m3u`
+- Philippines: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
+- Singapore: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-Liên kết dự phòng: nếu jsDelivr chậm hoặc bị chặn trên mạng của bạn, thay `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist` bằng `https://raw.githubusercontent.com/maweis1981/iptv-playlists/dist`.
+Liên kết dự phòng: nếu jsDelivr chậm hoặc bị chặn trên mạng của bạn, thay `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` bằng `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
 
 ## Nguyên tắc chọn kênh
 
@@ -44,7 +44,7 @@ Dữ liệu và liên kết kênh lấy từ các dự án cộng đồng [iptv-
 
 ## Yêu cầu gỡ bỏ
 
-Chủ sở hữu bản quyền có thể yêu cầu gỡ kênh hoặc liên kết qua [yêu cầu gỡ bỏ](https://github.com/maweis1981/iptv-playlists/issues/new?template=takedown.yml). Yêu cầu được xử lý trong vòng 72 giờ và có hiệu lực ở bản dựng hằng ngày tiếp theo.
+Chủ sở hữu bản quyền có thể yêu cầu gỡ kênh hoặc liên kết qua [yêu cầu gỡ bỏ](https://github.com/streamline-iptv/iptv-playlists/issues/new?template=takedown.yml). Yêu cầu được xử lý trong vòng 72 giờ và có hiệu lực ở bản dựng hằng ngày tiếp theo.
 
 ## Cấu trúc kho mã
 

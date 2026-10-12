@@ -12,22 +12,22 @@
 
 | 播放列表 | 链接 |
 | --- | --- |
-| 全部频道 | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.m3u` |
-| 按国家和地区 | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/<code>.m3u` (例如 `my`, `id`, `vn`, `th`) |
-| 按分类 | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/categories/<id>.m3u` (例如 `news`, `kids`, `sports`) |
-| 按语言 | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/languages/<code>.m3u` (ISO 639-3 代码, 例如 `msa`, `ind`, `vie`) |
-| 机器可读索引 | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.json` |
+| 全部频道 | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.m3u` |
+| 按国家和地区 | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/<code>.m3u` (例如 `my`, `id`, `vn`, `th`) |
+| 按分类 | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/categories/<id>.m3u` (例如 `news`, `kids`, `sports`) |
+| 按语言 | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/languages/<code>.m3u` (ISO 639-3 代码, 例如 `msa`, `ind`, `vie`) |
+| 机器可读索引 | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.json` |
 
 ### 热门国家和地区
 
-- 马来西亚: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/my.m3u`
-- 印度尼西亚: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/id.m3u`
-- 越南: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/vn.m3u`
-- 泰国: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/th.m3u`
-- 菲律宾: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/ph.m3u`
-- 新加坡: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/sg.m3u`
+- 马来西亚: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/my.m3u`
+- 印度尼西亚: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/id.m3u`
+- 越南: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/vn.m3u`
+- 泰国: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/th.m3u`
+- 菲律宾: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
+- 新加坡: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-备用镜像：如果 jsDelivr 在你的网络下访问慢或无法访问，把 `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist` 替换为 `https://raw.githubusercontent.com/maweis1981/iptv-playlists/dist`.
+备用镜像：如果 jsDelivr 在你的网络下访问慢或无法访问，把 `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` 替换为 `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
 
 ## 收录规则
 
@@ -44,7 +44,7 @@
 
 ## 版权投诉与下架
 
-权利人可以通过[下架申请](https://github.com/maweis1981/iptv-playlists/issues/new?template=takedown.yml)要求移除某个频道或链接。我们会在 72 小时内处理，下一次每日构建即生效。
+权利人可以通过[下架申请](https://github.com/streamline-iptv/iptv-playlists/issues/new?template=takedown.yml)要求移除某个频道或链接。我们会在 72 小时内处理，下一次每日构建即生效。
 
 ## 仓库结构
 

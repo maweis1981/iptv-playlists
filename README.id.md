@@ -12,22 +12,22 @@ Tempel salah satu tautan ini ke [Doubo](https://doubo.tv) atau pemutar apa pun y
 
 | Playlist | Tautan |
 | --- | --- |
-| Semua saluran | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.m3u` |
-| Berdasarkan negara | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/<code>.m3u` (mis. `my`, `id`, `vn`, `th`) |
-| Berdasarkan kategori | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/categories/<id>.m3u` (mis. `news`, `kids`, `sports`) |
-| Berdasarkan bahasa | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/languages/<code>.m3u` (kode ISO 639-3, mis. `msa`, `ind`, `vie`) |
-| Indeks mesin | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.json` |
+| Semua saluran | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.m3u` |
+| Berdasarkan negara | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/<code>.m3u` (mis. `my`, `id`, `vn`, `th`) |
+| Berdasarkan kategori | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/categories/<id>.m3u` (mis. `news`, `kids`, `sports`) |
+| Berdasarkan bahasa | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/languages/<code>.m3u` (kode ISO 639-3, mis. `msa`, `ind`, `vie`) |
+| Indeks mesin | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.json` |
 
 ### Negara populer
 
-- Malaysia: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/my.m3u`
-- Indonesia: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/id.m3u`
-- Vietnam: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/vn.m3u`
-- Thailand: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/th.m3u`
-- Filipina: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/ph.m3u`
-- Singapura: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/sg.m3u`
+- Malaysia: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/my.m3u`
+- Indonesia: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/id.m3u`
+- Vietnam: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/vn.m3u`
+- Thailand: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/th.m3u`
+- Filipina: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
+- Singapura: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-Tautan cadangan: jika jsDelivr lambat atau diblokir di jaringan Anda, ganti `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist` dengan `https://raw.githubusercontent.com/maweis1981/iptv-playlists/dist`.
+Tautan cadangan: jika jsDelivr lambat atau diblokir di jaringan Anda, ganti `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` dengan `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
 
 ## Apa yang dicantumkan
 
@@ -44,7 +44,7 @@ Data dan tautan saluran berasal dari proyek komunitas [iptv-org/database](https:
 
 ## Permintaan penghapusan
 
-Pemegang hak dapat meminta saluran atau tautan dihapus melalui [permintaan penghapusan](https://github.com/maweis1981/iptv-playlists/issues/new?template=takedown.yml). Permintaan diproses dalam 72 jam dan berlaku pada build harian berikutnya.
+Pemegang hak dapat meminta saluran atau tautan dihapus melalui [permintaan penghapusan](https://github.com/streamline-iptv/iptv-playlists/issues/new?template=takedown.yml). Permintaan diproses dalam 72 jam dan berlaku pada build harian berikutnya.
 
 ## Struktur repositori
 

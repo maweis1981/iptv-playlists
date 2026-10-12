@@ -8,7 +8,7 @@ in `policy/` are licensed under the
 You may copy, redistribute and adapt them for any purpose, including
 commercially, as long as you credit the source, for example:
 
-> Channel list: Doubo Public Channel Directory (https://github.com/maweis1981/iptv-playlists), CC BY 4.0
+> Channel list: Doubo Public Channel Directory (https://github.com/streamline-iptv/iptv-playlists), CC BY 4.0
 
 Watching a playlist in a player does not require attribution; republishing the
 list or building on it does.

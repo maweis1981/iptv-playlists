@@ -12,22 +12,22 @@ Paste any of these links into [Doubo](https://doubo.tv) or any player that suppo
 
 | Playlist | URL |
 | --- | --- |
-| All channels | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.m3u` |
-| By country | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/<code>.m3u` (e.g. `my`, `id`, `vn`, `th`) |
-| By category | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/categories/<id>.m3u` (e.g. `news`, `kids`, `sports`) |
-| By language | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/languages/<code>.m3u` (ISO 639-3, e.g. `msa`, `ind`, `vie`) |
-| Machine-readable index | `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/index.json` |
+| All channels | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.m3u` |
+| By country | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/<code>.m3u` (e.g. `my`, `id`, `vn`, `th`) |
+| By category | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/categories/<id>.m3u` (e.g. `news`, `kids`, `sports`) |
+| By language | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/languages/<code>.m3u` (ISO 639-3, e.g. `msa`, `ind`, `vie`) |
+| Machine-readable index | `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/index.json` |
 
 ### Popular countries
 
-- Malaysia: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/my.m3u`
-- Indonesia: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/id.m3u`
-- Vietnam: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/vn.m3u`
-- Thailand: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/th.m3u`
-- Philippines: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/ph.m3u`
-- Singapore: `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist/countries/sg.m3u`
+- Malaysia: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/my.m3u`
+- Indonesia: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/id.m3u`
+- Vietnam: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/vn.m3u`
+- Thailand: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/th.m3u`
+- Philippines: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
+- Singapore: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-Mirror: if jsDelivr is slow or blocked on your network, replace `https://cdn.jsdelivr.net/gh/maweis1981/iptv-playlists@dist` with `https://raw.githubusercontent.com/maweis1981/iptv-playlists/dist`.
+Mirror: if jsDelivr is slow or blocked on your network, replace `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` with `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
 
 ## What gets listed
 
@@ -44,7 +44,7 @@ Channel data and links come from the community projects [iptv-org/database](http
 
 ## Takedown
 
-Rights holders can ask for a channel or link to be removed with a [takedown request](https://github.com/maweis1981/iptv-playlists/issues/new?template=takedown.yml). Requests are handled within 72 hours and take effect in the next daily build.
+Rights holders can ask for a channel or link to be removed with a [takedown request](https://github.com/streamline-iptv/iptv-playlists/issues/new?template=takedown.yml). Requests are handled within 72 hours and take effect in the next daily build.
 
 ## Repository layout
 
