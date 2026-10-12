@@ -1,0 +1,23 @@
+name: 版权投诉 / 下架申请 · Takedown request
+description: 权利人要求移除某个频道或链接 · Ask for a channel or link to be removed
+title: "Takedown: "
+labels: [takedown]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: 频道 ID 或链接 · Channel ID or stream URL
+      description: 例如 e.g. 8TV.my，或完整的 .m3u8 地址
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由 · Reason
+      description: 您与该内容的关系（权利人 / 授权代理）以及移除理由
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: 联系方式（可选）· Contact (optional)

@@ -1,0 +1,38 @@
+# Stream hosts accepted even when they differ from the channel's own website.
+# One registrable domain per line. Only broadcast-grade CDNs and official
+# free ad-supported (FAST) platforms belong here; anything else is excluded
+# unless the stream is served from the channel's own website domain.
+# Changes go through a pull request with a short justification.
+
+# Broadcast CDNs
+akamaized.net
+akamaihd.net
+cloudfront.net
+amazonaws.com
+llnwi.net
+edgecastcdn.net
+streamlock.net
+wowza.com
+uplynk.com
+mdstrm.com
+live-video.net
+brightcove.com
+brightcovecdn.com
+jwplive.com
+jwplayer.com
+jwplatform.com
+jwp.services
+
+# Official FAST platforms
+amagi.tv
+wurl.tv
+wurl.com
+tubi.video
+frequency.stream
+rakuten.tv
+samsungtv.plus
+dailymotion.com
+
+# Public, educational and government access TV
+cablecast.tv
+telvue.com
