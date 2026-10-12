@@ -27,7 +27,7 @@ Paste any of these links into [Doubo](https://doubo.tv) or any player that suppo
 - Philippines: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
 - Singapore: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-Mirror: if jsDelivr is slow or blocked on your network, replace `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` with `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
+Mirror: if jsDelivr is slow or blocked on your network, replace `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` with `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`. jsDelivr can lag a few hours behind the daily build; the GitHub link is never more than a few minutes old.
 
 ## What gets listed
 

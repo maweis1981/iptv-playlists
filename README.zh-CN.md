@@ -27,7 +27,7 @@
 - 菲律宾: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
 - 新加坡: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-备用镜像：如果 jsDelivr 在你的网络下访问慢或无法访问，把 `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` 替换为 `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
+备用镜像：如果 jsDelivr 在你的网络下访问慢或无法访问，把 `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` 替换为 `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`. jsDelivr 可能比每日构建晚几个小时更新；GitHub 链接最多只晚几分钟。
 
 ## 收录规则
 

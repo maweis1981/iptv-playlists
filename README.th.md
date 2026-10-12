@@ -27,7 +27,7 @@
 - ฟิลิปปินส์: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
 - สิงคโปร์: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-ลิงก์สำรอง: หาก jsDelivr ช้าหรือถูกบล็อกในเครือข่ายของคุณ ให้แทนที่ `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` ด้วย `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
+ลิงก์สำรอง: หาก jsDelivr ช้าหรือถูกบล็อกในเครือข่ายของคุณ ให้แทนที่ `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` ด้วย `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`. jsDelivr อาจช้ากว่าการอัปเดตรายวันได้หลายชั่วโมง ส่วนลิงก์ GitHub จะช้ากว่าไม่เกินไม่กี่นาที
 
 ## หลักการคัดเลือก
 

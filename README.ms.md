@@ -27,7 +27,7 @@ Tampal mana-mana pautan ini dalam [Doubo](https://doubo.tv) atau mana-mana pemai
 - Filipina: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
 - Singapura: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-Pautan alternatif: jika jsDelivr perlahan atau disekat di rangkaian anda, gantikan `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` dengan `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
+Pautan alternatif: jika jsDelivr perlahan atau disekat di rangkaian anda, gantikan `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` dengan `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`. jsDelivr mungkin ketinggalan beberapa jam daripada binaan harian; pautan GitHub paling lama ketinggalan beberapa minit.
 
 ## Apa yang disenaraikan
 

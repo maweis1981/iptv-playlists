@@ -27,7 +27,7 @@ Dán bất kỳ liên kết nào dưới đây vào [Doubo](https://doubo.tv) ho
 - Philippines: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/ph.m3u`
 - Singapore: `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist/countries/sg.m3u`
 
-Liên kết dự phòng: nếu jsDelivr chậm hoặc bị chặn trên mạng của bạn, thay `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` bằng `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`.
+Liên kết dự phòng: nếu jsDelivr chậm hoặc bị chặn trên mạng của bạn, thay `https://cdn.jsdelivr.net/gh/streamline-iptv/iptv-playlists@dist` bằng `https://raw.githubusercontent.com/streamline-iptv/iptv-playlists/dist`. jsDelivr có thể chậm vài giờ so với bản dựng hằng ngày; liên kết GitHub chỉ chậm tối đa vài phút.
 
 ## Nguyên tắc chọn kênh
 
