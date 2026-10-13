@@ -19,6 +19,12 @@ sources:
     url: https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
     license: not stated; only links are used, attributed here
 
+  - id: sea-curated
+    name: Hand-picked Southeast Asian streams
+    kind: curated
+    path: sources/sea-curated.m3u
+    # reviewed from discovered/REPORT.md: only CDN accounts that serve one broadcaster's own channels
+
   - id: discovered
     name: Streams found by scripts/discover.py
     kind: discovered

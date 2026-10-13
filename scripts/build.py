@@ -21,6 +21,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import csv
+import fnmatch
 import ipaddress
 import json
 import re
@@ -98,11 +99,13 @@ class Policy:
         blocked_channels: set[str],
         takedowns: set[str],
         official_domains: dict[str, set[str]] | None = None,
+        blocked_hosts: set[str] | None = None,
     ):
         self.allowed_hosts = allowed_hosts
         self.blocked_channels = blocked_channels
         self.takedowns = takedowns
         self.official_domains = official_domains or {}  # channel id -> other domains its broadcaster owns
+        self.blocked_hosts = blocked_hosts or set()  # hostname patterns of paid operators / aggregators
 
     @classmethod
     def load(cls, data: Path) -> Policy:
@@ -115,6 +118,7 @@ class Policy:
             blocked_channels={r["channel"] for r in read_csv(data / "blocklist.csv")},
             takedowns={r["target"] for r in read_csv(ROOT / "policy" / "takedown.csv")},
             official_domains=official,
+            blocked_hosts=load_lines(ROOT / "policy" / "blocked-hosts.txt"),
         )
 
     def own_domains(self, channel: Channel) -> set[str]:
@@ -131,6 +135,9 @@ class Policy:
         if channel.id in self.blocked_channels or channel.id in self.takedowns or stream.url in self.takedowns:
             return False
         if urlsplit(stream.url).scheme not in ("http", "https"):
+            return False
+        host = (urlsplit(stream.url).hostname or "").lower()
+        if any(fnmatch.fnmatchcase(host, pattern) for pattern in self.blocked_hosts):
             return False
         domain = stream.host_domain
         if domain is None:

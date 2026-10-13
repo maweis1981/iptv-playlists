@@ -1,0 +1,64 @@
+#EXTM3U
+# Hand-picked Southeast Asian streams from public playlists found by scripts/discover.py.
+# Each stream sits on a CDN account that serves a single broadcaster's own channels;
+# the owner and evidence are noted above each group. Reviewed 2026-10-13.
+# Paid-operator and aggregator relays are excluded (see policy/blocked-hosts.txt).
+
+# tonton-live-ssai.akamaized.net: Media Prima (Malaysia): tonton is its own free streaming service
+#EXTINF:-1 tvg-id="8TV.my",8TV Malaysia
+https://tonton-live-ssai.akamaized.net/live/a884c33b-6b11-4433-8bf9-a8899939e224/cmaf.isml/.m3u8
+#EXTINF:-1 tvg-id="NTV7.my",Didik TV
+https://tonton-live-ssai.akamaized.net/live/0e27ef78-4cc9-4c62-bec9-5c946c9e7354/cmaf.isml/.m3u8
+#EXTINF:-1 tvg-id="TV3.my",TV3
+https://tonton-live-ssai.akamaized.net/live/2dd2b7cd-1b34-4871-b669-57b5c9beca23/cmaf.isml/.m3u8
+#EXTINF:-1 tvg-id="TV9.my",TV9 Malaysia
+https://tonton-live-ssai.akamaized.net/live/2020783a-0303-401a-9c92-b7c3c9108c0b/cmaf.isml/.m3u8
+
+# d25tgymtnqzu8s.cloudfront.net: RTM (Malaysian state broadcaster): account carries only RTM channels and already serves RTM streams listed via iptv-org
+#EXTINF:-1 tvg-id="TV1.my",TV 1
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/chunklist_b2596000_slENG.m3u8?id=1
+#EXTINF:-1 tvg-id="TV2.my",RTM TV 2 [Geo-blocked]
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/manifest.mpd
+#EXTINF:-1 tvg-id="TV2.my",TV 2
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/chunklist_b2596000_slENG.m3u8?id=2
+#EXTINF:-1 tvg-id="TV6.my",TV6
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/manifest.mpd
+#EXTINF:-1 tvg-id="TV6.my",TV6
+https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/index.m3u8?id=6
+
+# d1211whpimeups.cloudfront.net: RTB (Brunei state broadcaster): account carries only RTB channels
+#EXTINF:-1 tvg-id="RTBAneka.bn",RTB Aneka (720p)
+https://d1211whpimeups.cloudfront.net/smil:rtb2/playlist.m3u8
+#EXTINF:-1 tvg-id="RTBGo.bn",RTB Go (720p)
+https://d1211whpimeups.cloudfront.net/smil:rtbgo/playlist.m3u8
+#EXTINF:-1 tvg-id="RTBSukmaindera.bn",RTB Sukmaindera (720p)
+https://d1211whpimeups.cloudfront.net/smil:rtb1/playlist.m3u8
+
+# mediacorp-videosbclive.akamaized.net: Mediacorp (Singapore): Mediacorp's own Akamai property
+#EXTINF:-1 tvg-id="CNAInternational.sg",CNA International (1080p)
+https://mediacorp-videosbclive.akamaized.net/dd724cfb0e8e4cdc921bbc4ac94614bf/ap-southeast-1/6057994443001/playlist.m3u8
+
+# cinemo-abscbn-ono.amagi.tv: ABS-CBN (Philippines) on Amagi, an allowed FAST platform
+#EXTINF:-1 tvg-id="CineMo.ph",Cine Mo! (720p)
+https://cinemo-abscbn-ono.amagi.tv/playlist.m3u8
+
+# cinemaone-abscbn-ono.amagi.tv: ABS-CBN (Philippines) on Amagi, an allowed FAST platform
+#EXTINF:-1 tvg-id="CinemaOne.ph",Cinema One (1080p)
+https://cinemaone-abscbn-ono.amagi.tv/index.m3u8
+
+# fastly.live.brightcove.com: GMM Grammy (Thailand): GMM 25 and One 31 are both GMM Grammy channels
+#EXTINF:-1 tvg-id="GMM25.th",GMM 25
+https://fastly.live.brightcove.com/6392745120112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTI3NDUxMjAxMTIifQ.w9Q_oqsE_WFClGF5tLVDtHnz5zfHHgNpumxVYNx4yYw/playlist-hls.m3u8
+#EXTINF:-1 tvg-id="One31.th",ONE HD
+https://fastly.live.brightcove.com/6393158620112/ap-southeast-1/6415628290001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicWN6dGF6LmVncmVzcy5wcHRpOHciLCJhY2NvdW50X2lkIjoiNjQxNTYyODI5MDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2NDE1NjI4MjkwMDAxIl0sImp0aSI6IjYzOTMxNTg2MjAxMTIifQ.Pv-kHDlJaV05HiJ2AQmS3PnV2ZQg7ovszKptAGg1EN0/playlist-hls.m3u8
+
+# dgwubfppws111.cloudfront.net: Indonesiana.TV, Indonesian Ministry of Education and Culture
+#EXTINF:-1 tvg-id="IndonesianaTV.id",Indonesiana.TV
+https://dgwubfppws111.cloudfront.net/out/v1/667a86e35ddd496c886fa11598dc184d/index.m3u8
+#EXTINF:-1 tvg-id="IndonesianaTV.id",Indonesiana TV
+#EXTVLCOPT:http-user-agent=OTTNavigator/1.7.1.6 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
+https://dgwubfppws111.cloudfront.net/out/v1/667a86e35ddd496c886fa11598dc184d/index_1.m3u8
+
+# kbtv.akamaized.net: Indonesiana.TV, Indonesian Ministry of Education and Culture
+#EXTINF:-1 tvg-id="IndonesianaTV.id",Indonesiana.TV (720p)
+https://kbtv.akamaized.net/hls/live/2031188/kanalbuya/playlist.m3u8

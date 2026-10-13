@@ -1,0 +1,17 @@
+# Stream hosts that are always left out, even on an allowed CDN or a channel's own domain.
+# These are accounts of paid TV operators and aggregators that relay other broadcasters'
+# channels. One hostname per line; * matches any characters within the hostname.
+# Changes go through a pull request with a short justification.
+
+# Telkomsel (Indonesian mobile operator, paid TV service)
+cdn-telkomsel-*.akamaized.net
+cdn01-telkomsel-*.akamaized.net
+
+# PLDT (Philippine telecom, paid TV service)
+qp-pldt-*.akamaized.net
+
+# CloudFront accounts that each relay rival Indonesian networks plus paid channels
+d3b0v7fggu5zwm.cloudfront.net
+d2tjypxxy769fn.cloudfront.net
+d2xz2v5wuvgur6.cloudfront.net
+d84q7nw4qf3j3.cloudfront.net
